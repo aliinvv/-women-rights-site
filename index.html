@@ -1,0 +1,2941 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Защита прав женщин в Кыргызстане</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS анимация -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Дополнительные стили -->
+    <style>
+                /* Подсветка поиска */
+        .search-highlight {
+            background-color: #fff3cd !important;
+            transition: background-color 0.5s;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1529333320936-e2193f4e3b32?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #f8f9fa !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #d63384 !important;
+        }
+        .nav-link {
+            color: #555 !important;
+        }
+        .nav-link:hover {
+            color: #d63384 !important;
+        }
+        .btn-primary {
+            background-color: #d63384;
+            border-color: #d63384;
+        }
+        .btn-primary:hover {
+            background-color: #b82b6e;
+            border-color: #b82b6e;
+        }
+        .btn-outline-primary {
+            color: #d63384;
+            border-color: #d63384;
+        }
+        .btn-outline-primary:hover {
+            background-color: #d63384;
+            border-color: #d63384;
+            color: white;
+        }
+        .section-title {
+            color: #d63384;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #d63384;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-item i {
+            color: #d63384;
+            margin-right: 10px;
+        }
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #222;
+            color: #aaa;
+            padding: 30px 0;
+        }
+        /* Языковой переключатель */
+        .lang-btn {
+            cursor: pointer;
+            margin: 0 5px;
+            color: #d63384;
+            font-weight: bold;
+        }
+        .lang-btn.active {
+            text-decoration: underline;
+        }
+        /* Контейнеры языков */
+        .lang-ru, .lang-ky {
+            transition: opacity 0.2s;
+        }
+        .lang-ky {
+            display: none;
+        }
+        /* Таблица контактов */
+        .table-contacts {
+            font-size: 0.95rem;
+        }
+        .table-contacts th {
+            background-color: #f8f9fa;
+            color: #d63384;
+        }
+                /* Кнопка "Наверх" */
+        .scroll-top-btn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            background: #d63384;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .scroll-top-btn:hover {
+            background: #b82b6e;
+            transform: translateY(-3px);
+        }
+        /* Кнопка Telegram */
+        .telegram-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #0088cc;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 20px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 99;
+            transition: 0.3s;
+        }
+        .telegram-btn:hover {
+            background: #006699;
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            .scroll-top-btn {
+                bottom: 20px;
+                right: 20px;
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+            .telegram-btn {
+                bottom: 20px;
+                left: 20px;
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+     <!-- Навигационная панель для РУССКОГО языка -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top lang-ru-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-female me-2"></i>Права женщин КР
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavRu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavRu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О проекте</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rights">Права</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#help">Помощь</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#free-legal-aid">Юр. помощь</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Вопросы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+                <!-- Языковой переключатель -->
+                <div class="ms-lg-3 mt-2 mt-lg-0">
+                    <span class="lang-btn active" onclick="setLanguage('ru')">Рус</span> |
+                    <span class="lang-btn" onclick="setLanguage('ky')">Кырг</span>
+                </div>
+                <!-- Поиск (демо) -->
+                <form class="d-flex ms-3" role="search" id="searchFormRu">
+                    <input class="form-control form-control-sm me-2" type="search" id="searchInputRu" placeholder="Поиск..." style="width:150px;">
+                    <button class="btn btn-sm btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Навигационная панель для КЫРГЫЗСКОГО языка -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top lang-ky-nav" style="display: none;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-female me-2"></i>Айымдар укугу КР
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavKy">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavKy">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home-ky">Башкы бет</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-ky">Долбоор </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rights-ky">Укуктар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#help-ky">Жардам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#free-legal-aid-ky">Юр. жардам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news-ky">Жаңылыктар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq-ky">Суроолор</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-ky">Байланыш</a></li>
+                </ul>
+                <!-- Языковой переключатель -->
+                <div class="ms-lg-3 mt-2 mt-lg-0">
+                    <span class="lang-btn" onclick="setLanguage('ru')">Рус</span> |
+                    <span class="lang-btn active" onclick="setLanguage('ky')">Кырг</span>
+                </div>
+                <!-- Поиск (демо) на кыргызском -->
+                <form class="d-flex ms-3" role="search" id="searchFormKy">
+                    <input class="form-control form-control-sm me-2" type="search" id="searchInputKy" placeholder="Издөө..." style="width:150px;">
+                    <button class="btn btn-sm btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Русская версия контента -->
+    <div class="lang-ru">
+        <!-- Главный экран (Hero) -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1 class="display-4 fw-bold" data-aos="fade-down">Защита прав женщин в Кыргызстане</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">Информационная поддержка, юридическая помощь и контакты кризисных центров</p>
+                <a href="#help" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-phone-alt me-2"></i>Нужна помощь</a>
+            </div>
+        </section>
+
+        <!-- О проекте (рус) -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">О проекте</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead text-center" data-aos="fade-up" data-aos-delay="100">
+                            Наш сайт создан для того, чтобы каждая женщина в Кыргызстане знала свои права и могла своевременно получить помощь в сложной жизненной ситуации. Мы стремимся повысить правовую грамотность женщин, поддержать их и предоставить доступ к проверенной и актуальной информации.
+                        </p>
+                        <p class="text-center" data-aos="fade-up" data-aos-delay="200">
+                            На сайте собраны разъяснения действующего законодательства, практические рекомендации, а также контакты кризисных центров, горячих линий и организаций, оказывающих правовую и психологическую помощь. Здесь вы найдете информацию о том, куда обращаться в случае насилия, дискриминации или иных нарушений прав.
+                        </p>
+                        <p class="text-center fw-bold" data-aos="fade-up" data-aos-delay="300">
+                            Наша цель — чтобы каждая женщина чувствовала себя защищённой, информированной и уверенной в своих правах. Знание своих прав — первый шаг к безопасности и справедливости.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Права женщин (аккордеон, рус) -->
+        <section id="rights" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Ваши права</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="rightsAccordionRu">
+                            <!-- Трудовые права -->
+                            <div class="accordion-item" data-aos="fade-up">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneRu">
+                                        Трудовые права
+                                    </button>
+                                </h2>
+                                <div id="collapseOneRu" class="accordion-collapse collapse show" data-bs-parent="#rightsAccordionRu">
+                                    <div class="accordion-body">
+                                        <p>Женщины в Кыргызстане имеют равные права с мужчинами в сфере труда. Запрещена дискриминация при приёме на работу, оплате труда, продвижении и увольнении. Работодатель обязан обеспечивать безопасные условия труда, выплачивать заработную плату своевременно и предоставлять отпуска, включая отпуск по беременности и родам, а также по уходу за ребёнком.</p>
+                                        <p><strong>Если ваши права нарушены:</strong></p>
+                                        <ol>
+                                            <li>Обратитесь к работодателю с письменным заявлением (сохраняйте копию).</li>
+                                            <li>Подайте жалобу в Государственную инспекцию труда.</li>
+                                            <li>Обратитесь в суд для восстановления на работе, взыскания зарплаты или компенсации.</li>
+                                            <li>При дискриминации можно требовать компенсацию морального вреда.</li>
+                                        </ol>
+                                        <p class="mb-0">Срок обращения в суд по трудовым спорам ограничен, поэтому важно действовать своевременно.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Защита от семейного насилия -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoRu">
+                                        Защита от семейного насилия
+                                    </button>
+                                </h2>
+                                <div id="collapseTwoRu" class="accordion-collapse collapse" data-bs-parent="#rightsAccordionRu">
+                                    <div class="accordion-body">
+                                        <p>Закон защищает женщин от физического, психологического, экономического и сексуального насилия в семье. Пострадавшая имеет право на защиту государства, получение охранного ордера, временное убежище, медицинскую и психологическую помощь.</p>
+                                        <p><strong>Если вы столкнулись с насилием:</strong></p>
+                                        <ol>
+                                            <li>В случае угрозы жизни — вызывайте милицию.</li>
+                                            <li>Подайте заявление в органы внутренних дел.</li>
+                                            <li>Требуйте выдачи охранного ордера (он ограничивает контакт агрессора с вами).</li>
+                                            <li>Обратитесь в кризисный центр за временным убежищем и поддержкой.</li>
+                                            <li>Зафиксируйте побои и травмы в медицинском учреждении.</li>
+                                        </ol>
+                                        <p class="mb-0">Насилие — это преступление. Вы не обязаны терпеть угрозы или побои.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Репродуктивные права -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeRu">
+                                        Репродуктивные права
+                                    </button>
+                                </h2>
+                                <div id="collapseThreeRu" class="accordion-collapse collapse" data-bs-parent="#rightsAccordionRu">
+                                    <div class="accordion-body">
+                                        <p>Каждая женщина имеет право самостоятельно решать вопросы материнства, получать достоверную информацию о здоровье, пользоваться медицинской помощью при беременности и родах, а также давать добровольное согласие на медицинское вмешательство.</p>
+                                        <p><strong>Важно знать:</strong></p>
+                                        <ul>
+                                            <li>Медицинские услуги оказываются только с вашего информированного согласия.</li>
+                                            <li>Никто не вправе принуждать к беременности или к её прерыванию.</li>
+                                            <li>Вы имеете право на конфиденциальность информации о состоянии здоровья.</li>
+                                            <li>Медицинские учреждения обязаны соблюдать стандарты безопасности.</li>
+                                        </ul>
+                                        <p class="mb-0">При нарушении прав можно обратиться к руководству медучреждения, в Министерство здравоохранения или в суд.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Имущественные права при разводе -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourRu">
+                                        Имущественные права при разводе
+                                    </button>
+                                </h2>
+                                <div id="collapseFourRu" class="accordion-collapse collapse" data-bs-parent="#rightsAccordionRu">
+                                    <div class="accordion-body">
+                                        <p>Имущество, нажитое супругами в браке, считается совместной собственностью и при разводе делится, как правило, поровну. Не подлежит разделу имущество, полученное до брака, по наследству или в дар.</p>
+                                        <p><strong>Если вы разводитесь:</strong></p>
+                                        <ol>
+                                            <li>Соберите документы на имущество (договоры, чеки, свидетельства о праве собственности).</li>
+                                            <li>Попробуйте заключить соглашение о разделе имущества.</li>
+                                            <li>При споре — подайте иск в суд.</li>
+                                            <li>Вы вправе требовать алименты на детей и, в отдельных случаях, на своё содержание.</li>
+                                        </ol>
+                                        <p class="mb-0">Даже если имущество оформлено на одного из супругов, оно может считаться совместно нажитым.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Как получить помощь (рус) -->
+        <section id="help" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Где получить помощь</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card p-4" data-aos="fade-right">
+                            <h4 class="mb-3">Кризисные центры и горячие линии</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 contact-item"><i class="fas fa-phone fa-fw"></i> <strong>112</strong> — Служба спасения (круглосуточно)</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-phone fa-fw"></i> <strong>111</strong> — Детский телефон доверия (для подростков и молодёжи)</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-phone fa-fw"></i> <strong>5200</strong> — Горячая линия для жертв насилия и торговли людьми (круглосуточно, анонимно, бесплатно)</li>
+                            </ul>
+                            <p class="text-muted small">* Если номера не отвечают, звоните 112 – вас соединят с нужной службой.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-4" data-aos="fade-left">
+                            <h4 class="mb-3">Карта организаций</h4>
+                            <div class="map-container">
+                                <!-- Ваша карта -->
+                                <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Ab833749780c2a0dc3c5c2ac48ba308a5c279f9dcb2712d55b0c91704a69aba12&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+                            </div>
+                            <p class="mt-2 text-muted small">* Метки: кризисные центры, ОВД, центры соцпомощи.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Таблица контактов кризисных центров (рус) -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h4 class="mb-3" data-aos="fade-up">Кризисные центры Кыргызстана</h4>
+                        <div class="table-responsive" data-aos="fade-up" data-aos-delay="100">
+                            <table class="table table-bordered table-striped table-contacts">
+                                <thead>
+                                    <tr>
+                                        <th>Название</th>
+                                        <th>Адрес</th>
+                                        <th>Телефон(ы)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Кризисный Центр «Шанс»</td><td>г. Бишкек, Пр. Чуй, 207, к.509</td><td>+996 709 710320</td></tr>
+                                    <tr><td>Кризисный центр «Сезим»</td><td>г. Бишкек, ул. Табышалиева, 3</td><td>+996 312 512640</td></tr>
+                                    <tr><td>ОО «Энсан — Диамонд»</td><td>г. Ош, ул. Ленина, 205/105</td><td>+996 772 328960<br>+996 3222 22965</td></tr>
+                                    <tr><td>Кризисный Центр «Акылкарачач» при ОО «Эне назары»</td><td>Ошская обл., Алайский р-н, с. Гульча, ул. Набережная, 1</td><td>+996 555 281423<br>+996 776 281423</td></tr>
+                                    <tr><td>Кризисный Центр «Аруулан»</td><td>г. Ош, ул. Ленина, 205</td><td>+996 776 380777<br>+996 3222 55608</td></tr>
+                                    <tr><td>Кризисный Центр «Ак журок»</td><td>г. Ош, ул. Ленина, 205</td><td>+996 550 231329<br>+996 3222 45976</td></tr>
+                                    <tr><td>ОО Кризисный Центр «Мээрбан»</td><td>г. Ош, ул. Ленина, 312/23</td><td>+996 773 843461</td></tr>
+                                    <tr><td>НПО Кризисный Центр «Тендеш»</td><td>г. Нарын, ул. Кыргыза, 31/3</td><td>+996 700 257890<br>+996 3522 50270<br>+996 3522 95047</td></tr>
+                                    <tr><td>Кризисный Центр «Маана» при ОФЦЖИ «Аялзат»</td><td>г. Талас, ул. Тагайбаева, 274/2</td><td>+996 557 484713<br>+996 3422 55885</td></tr>
+                                    <tr><td>Кризисный Центр «Жаныл Мырза» при ОФ «Омур Булагы»</td><td>г. Баткен, ул. Сыдыкова, 3</td><td>+996 777 393077</td></tr>
+                                    <tr><td>Кризисный Центр «Каниет»</td><td>г. Джалал-Абад, ул. Б. Осмонова, 113</td><td>+996 3722 55084</td></tr>
+                                    <tr><td>ОО "Аялзат — развитие женских инициатив"</td><td>г. Каракол, ул. Абдрахманова, 105-14</td><td>+996 3922 51091<br>+996 553 835717</td></tr>
+                                    <tr><td>Кризисный центр «Алтынай»</td><td>г. Чолпон-Ата</td><td>+996 709 694550</td></tr>
+                                    <tr><td>Кризисный центр «Мээрман»</td><td>г. Каракол</td><td>+996 706 383637</td></tr>
+                                    <tr><td>Центр помощи и реабилитации женщин «Химая»</td><td>г. Каракол</td><td>+996 702 223535 (горячая линия)<br>+996 551 733390</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новости (рус) с модальными окнами -->
+        <section id="news" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Новости и события</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Новость 1 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100">
+                            <img src="ph1.jpeg" class="card-img-top" alt="Новости" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Усиление мер против семейного насилия</h5>
+                                <p class="card-text">В октябре 2025 года в Кыргызстане подписан закон, ужесточающий наказания за домашнее насилие...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal1Ru">
+                                    Читать полностью
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 2 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100">
+                            <img src="ph2.jpg" class="card-img-top" alt="Новости" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Резкий рост случаев домашнего насилия</h5>
+                                <p class="card-text">За 10 месяцев 2024 года зарегистрировано более 14 000 случаев семейного насилия (+37% к прошлому году).</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal2Ru">
+                                    Читать полностью
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 3 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100">
+                            <img src="рh3.jpg" class="card-img-top" alt="Новости" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Трагический случай в Таласской области</h5>
+                                <p class="card-text">В феврале 2026 года женщина получила тяжёлые ожоги после поджога мужем. Происшествие вызвало общественный резонанс...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal3Ru">
+                                    Читать полностью
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- НОВЫЙ КРАСИВЫЙ FAQ (рус) -->
+        <section id="faq" class="py-5 faq-section">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Часто задаваемые вопросы</h2>
+                
+                <!-- Раздел 1: Семейное насилие и безопасность -->
+                <div class="faq-category" data-aos="fade-up">
+                    <h3 class="faq-category-title"><i class="fas fa-shield-alt"></i> Семейное насилие и безопасность</h3>
+                    <div class="accordion" id="faqViolenceRu">
+                        <!-- Вопрос 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence1Ru">
+                                    Муж меня ударил, но я боюсь обращаться в милицию. Что будет дальше? Не станет ли хуже?
+                                </button>
+                            </h2>
+                            <div id="faqViolence1Ru" class="accordion-collapse collapse" data-bs-parent="#faqViolenceRu">
+                                <div class="accordion-body">
+                                    <p>Если муж применил к вам силу — это <strong>нарушение закона</strong>. В Кыргызстане действует Закон «О защите от семейного насилия», и государство обязано вас защищать.</p>
+                                    <p><strong>Что произойдёт, если вы обратитесь:</strong></p>
+                                    <ol>
+                                        <li>Вы звоните 102 или идёте в милицию.</li>
+                                        <li>Ваше заявление обязаны принять и зарегистрировать.</li>
+                                        <li>Если есть опасность повторного насилия, милиция может сразу выдать временный охранный ордер (до 3 суток).</li>
+                                        <li>Дальше суд может продлить защиту до 30 суток и больше.</li>
+                                        <li>Если есть побои — вас направят на медицинскую экспертизу.</li>
+                                    </ol>
+                                    <p><strong>Очень важно:</strong> Вас <strong>не имеют права заставлять "мириться"</strong>. Насилие — это не семейная ссора, а правонарушение.</p>
+                                    <p><strong>Станет ли хуже?</strong> На практике чаще становится хуже тогда, когда насилие остаётся безнаказанным. Когда агрессор понимает, что есть последствия, риск повторения снижается.</p>
+                                    <p>Если вам страшно — можно сначала обратиться в кризисный центр или проконсультироваться с юристом.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence2Ru">
+                                    Что такое охранный ордер? Он правда защищает?
+                                </button>
+                            </h2>
+                            <div id="faqViolence2Ru" class="accordion-collapse collapse" data-bs-parent="#faqViolenceRu">
+                                <div class="accordion-body">
+                                    <p>Охранный ордер — это официальный запрет для агрессора.</p>
+                                    <p><strong>Он может запрещать:</strong></p>
+                                    <ul>
+                                        <li>приближаться к вам,</li>
+                                        <li>звонить и писать вам,</li>
+                                        <li>приходить к вам на работу,</li>
+                                        <li>проживать с вами в одном доме (даже если дом оформлен на него),</li>
+                                        <li>угрожать или преследовать вас.</li>
+                                    </ul>
+                                    <p>Если он нарушит ордер — его могут оштрафовать, арестовать или привлечь к уголовной ответственности.</p>
+                                    <p>Это не просто «бумажка» — за её нарушение есть наказание.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence3Ru">
+                                    Если я уйду от мужа из-за насилия, заберут ли у меня детей?
+                                </button>
+                            </h2>
+                            <div id="faqViolence3Ru" class="accordion-collapse collapse" data-bs-parent="#faqViolenceRu">
+                                <div class="accordion-body">
+                                    <p>Нет.</p>
+                                    <p>То, что вы уходите, чтобы защитить себя и детей — <strong>не является причиной для изъятия детей</strong>.</p>
+                                    <p>Наоборот: закон считает, что ребёнок должен жить в безопасности. Если отец проявляет насилие, это может стать причиной:</p>
+                                    <ul>
+                                        <li>ограничения его родительских прав,</li>
+                                        <li>определения проживания детей с матерью,</li>
+                                        <li>ограничения общения отца с детьми.</li>
+                                    </ul>
+                                    <p>Органы опеки вмешиваются только если детям реально угрожает опасность или родители не заботятся о них. Если вы защищаете детей — вы действуете правильно.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence4Ru">
+                                    Куда идти, если дома опасно, а идти некуда?
+                                </button>
+                            </h2>
+                            <div id="faqViolence4Ru" class="accordion-collapse collapse" data-bs-parent="#faqViolenceRu">
+                                <div class="accordion-body">
+                                    <p>В Кыргызстане есть кризисные центры для женщин и детей, пострадавших от насилия.</p>
+                                    <p><strong>Они могут предоставить:</strong></p>
+                                    <ul>
+                                        <li>временное жильё,</li>
+                                        <li>питание,</li>
+                                        <li>помощь психолога,</li>
+                                        <li>помощь юриста,</li>
+                                        <li>поддержку в получении охранного ордера.</li>
+                                    </ul>
+                                    <p>Адрес убежища не разглашается — для вашей безопасности.</p>
+                                    <p>Если есть срочная угроза — звоните 102.</p>
+                                    <p>Также можно обратиться:</p>
+                                    <ul>
+                                        <li>к участковому инспектору,</li>
+                                        <li>в отдел соцзащиты,</li>
+                                        <li>в местные органы власти.</li>
+                                    </ul>
+                                    <p>Вы не обязаны оставаться там, где вам угрожает опасность.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence5Ru">
+                                    Свекровь меня оскорбляет и настраивает детей против меня. Это насилие?
+                                </button>
+                            </h2>
+                            <div id="faqViolence5Ru" class="accordion-collapse collapse" data-bs-parent="#faqViolenceRu">
+                                <div class="accordion-body">
+                                    <p>Если это происходит постоянно — да, это может считаться психологическим насилием.</p>
+                                    <p><strong>Психологическое насилие — это:</strong></p>
+                                    <ul>
+                                        <li>регулярные оскорбления,</li>
+                                        <li>унижение,</li>
+                                        <li>запугивание,</li>
+                                        <li>давление,</li>
+                                        <li>настраивание детей против родителя.</li>
+                                    </ul>
+                                    <p>Если это систематически разрушает вашу жизнь и влияет на детей — вы можете:</p>
+                                    <ul>
+                                        <li>обратиться к участковому,</li>
+                                        <li>обратиться в органы опеки,</li>
+                                        <li>зафиксировать факты (сообщения, записи, свидетели),</li>
+                                        <li>подать заявление.</li>
+                                    </ul>
+                                    <p>Разовый конфликт — это не всегда нарушение закона. Но постоянное унижение — уже проблема, которую можно решать через закон.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Раздел 2: Трудовые права -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="faq-category-title"><i class="fas fa-briefcase"></i> Трудовые права</h3>
+                    <div class="accordion" id="faqWorkRu">
+                        <!-- Вопрос 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork1Ru">
+                                    Я беременна, а начальник намекает, что мне лучше уволиться «по собственному». Что делать?
+                                </button>
+                            </h2>
+                            <div id="faqWork1Ru" class="accordion-collapse collapse" data-bs-parent="#faqWorkRu">
+                                <div class="accordion-body">
+                                    <p>Заставлять беременную женщину увольняться — <strong>незаконно</strong>.</p>
+                                    <p>По Трудовому кодексу КР:</p>
+                                    <ul>
+                                        <li>Беременную женщину нельзя уволить по инициативе работодателя (кроме полной ликвидации организации).</li>
+                                        <li>Вас не имеют права принуждать писать заявление «по собственному желанию».</li>
+                                        <li>Вам обязаны предоставить отпуск по беременности и родам и сохранить рабочее место.</li>
+                                    </ul>
+                                    <p><strong>Что делать:</strong></p>
+                                    <ul>
+                                        <li>Не пишите заявление «по собственному».</li>
+                                        <li>Попросите все требования давать вам письменно.</li>
+                                        <li>Сохраните переписку и доказательства давления.</li>
+                                        <li>Обратитесь в Государственную инспекцию труда или в прокуратуру.</li>
+                                    </ul>
+                                    <p>Если вы напишете «по собственному», потом будет сложнее доказать давление.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork2Ru">
+                                    Мне платят меньше, чем мужчинам на такой же должности. Это законно?
+                                </button>
+                            </h2>
+                            <div id="faqWork2Ru" class="accordion-collapse collapse" data-bs-parent="#faqWorkRu">
+                                <div class="accordion-body">
+                                    <p>Нет. За одинаковую работу должна быть одинаковая оплата — независимо от пола.</p>
+                                    <p>Закон КР запрещает дискриминацию в труде.</p>
+                                    <p><strong>Как доказать:</strong></p>
+                                    <ul>
+                                        <li>Сравнить должностные инструкции.</li>
+                                        <li>Сравнить объем работы.</li>
+                                        <li>Узнать размер официальной зарплаты (если возможно).</li>
+                                        <li>Собрать свидетельские показания коллег.</li>
+                                    </ul>
+                                    <p><strong>Куда обращаться:</strong></p>
+                                    <ul>
+                                        <li>Инспекция труда,</li>
+                                        <li>Прокуратура,</li>
+                                        <li>Суд.</li>
+                                    </ul>
+                                    <p>Если подтвердится дискриминация — работодатель обязан выплатить разницу.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 8 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork3Ru">
+                                    Работодатель задерживает зарплату уже 2 месяца. Что делать?
+                                </button>
+                            </h2>
+                            <div id="faqWork3Ru" class="accordion-collapse collapse" data-bs-parent="#faqWorkRu">
+                                <div class="accordion-body">
+                                    <p>Это нарушение закона.</p>
+                                    <p>Заработная плата должна выплачиваться вовремя. При задержке работодатель обязан выплатить компенсацию за каждый день просрочки.</p>
+                                    <p><strong>Куда обращаться:</strong></p>
+                                    <ol>
+                                        <li>Государственная инспекция труда.</li>
+                                        <li>Прокуратура.</li>
+                                        <li>Суд (можно требовать долг + компенсацию).</li>
+                                    </ol>
+                                    <p>Вы также имеете право приостановить работу (с письменным уведомлением), если задержка существенная.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 9 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork4Ru">
+                                    Меня заставляют уйти в отпуск «за свой счет» из-за отсутствия работы. Законно ли это?
+                                </button>
+                            </h2>
+                            <div id="faqWork4Ru" class="accordion-collapse collapse" data-bs-parent="#faqWorkRu">
+                                <div class="accordion-body">
+                                    <p>Нет. Отпуск без сохранения зарплаты — только по вашему желанию.</p>
+                                    <p>Если нет работы — это проблема работодателя, а не ваша.</p>
+                                    <p><strong>Он обязан:</strong></p>
+                                    <ul>
+                                        <li>оплачивать простой, или</li>
+                                        <li>решать вопрос в рамках закона (но не за ваш счет).</li>
+                                    </ul>
+                                    <p>Принуждение к отпуску «за свой счет» незаконно.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Раздел 3: Развод, дети и имущество -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="faq-category-title"><i class="fas fa-heart-broken"></i> Развод, дети и имущество</h3>
+                    <div class="accordion" id="faqFamilyRu">
+                        <!-- Вопрос 10 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily1Ru">
+                                    Муж не дает развод и угрожает, что не отдаст детей. Что делать?
+                                </button>
+                            </h2>
+                            <div id="faqFamily1Ru" class="accordion-collapse collapse" data-bs-parent="#faqFamilyRu">
+                                <div class="accordion-body">
+                                    <p>Если один из супругов хочет развестись — развод всё равно возможен через суд.</p>
+                                    <p><strong>Суд:</strong></p>
+                                    <ul>
+                                        <li>расторгнет брак,</li>
+                                        <li>определит, с кем будут жить дети,</li>
+                                        <li>установит порядок общения второго родителя.</li>
+                                    </ul>
+                                    <p>Никто не может «запретить» вам развод.</p>
+                                    <p>Если есть угрозы — фиксируйте их и обращайтесь в милицию.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 11 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily2Ru">
+                                    Как добиться алиментов, если бывший муж официально не работает?
+                                </button>
+                            </h2>
+                            <div id="faqFamily2Ru" class="accordion-collapse collapse" data-bs-parent="#faqFamilyRu">
+                                <div class="accordion-body">
+                                    <p>Отсутствие официальной работы не освобождает от алиментов.</p>
+                                    <p><strong>Суд может:</strong></p>
+                                    <ul>
+                                        <li>назначить процент от дохода, или</li>
+                                        <li>установить фиксированную сумму.</li>
+                                    </ul>
+                                    <p><strong>Если он не платит:</strong></p>
+                                    <ul>
+                                        <li>дело передается судебным исполнителям,</li>
+                                        <li>могут арестовать имущество,</li>
+                                        <li>ограничить выезд за границу,</li>
+                                        <li>привлечь к ответственности.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 12 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily3Ru">
+                                    Квартира куплена в браке, но оформлена на мужа. Имею ли я право?
+                                </button>
+                            </h2>
+                            <div id="faqFamily3Ru" class="accordion-collapse collapse" data-bs-parent="#faqFamilyRu">
+                                <div class="accordion-body">
+                                    <p>Да.</p>
+                                    <p>Если имущество куплено в браке — оно считается совместным, независимо от того, на кого оформлено.</p>
+                                    <p>При разводе имущество делится пополам, если суд не установит иное.</p>
+                                    <p><strong>Важно:</strong> Соберите документы:</p>
+                                    <ul>
+                                        <li>договор купли-продажи,</li>
+                                        <li>дату покупки,</li>
+                                        <li>свидетельство о браке.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 13 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily4Ru">
+                                    Бывший муж угрожает вывезти ребенка за границу. Что делать?
+                                </button>
+                            </h2>
+                            <div id="faqFamily4Ru" class="accordion-collapse collapse" data-bs-parent="#faqFamilyRu">
+                                <div class="accordion-body">
+                                    <p><strong>Вы можете:</strong></p>
+                                    <ul>
+                                        <li>Подать заявление в суд о запрете выезда ребенка без вашего согласия.</li>
+                                        <li>Обратиться в Пограничную службу с заявлением о запрете вывоза.</li>
+                                        <li>Обратиться в милицию, если есть реальная угроза.</li>
+                                    </ul>
+                                    <p>Без согласия второго родителя выезд ребенка может быть ограничен.</p>
+                                    <p>Действовать лучше заранее, а не после вывоза.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Раздел 4: Юридические и практические вопросы -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="faq-category-title"><i class="fas fa-gavel"></i> Юридические и практические вопросы</h3>
+                    <div class="accordion" id="faqLegalRu">
+                        <!-- Вопрос 14 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal1Ru">
+                                    У меня нет денег на адвоката. Где получить бесплатную помощь?
+                                </button>
+                            </h2>
+                            <div id="faqLegal1Ru" class="accordion-collapse collapse" data-bs-parent="#faqLegalRu">
+                                <div class="accordion-body">
+                                    <p>В Кыргызстане действует система гарантированной государством юридической помощи.</p>
+                                    <p><strong>Вы можете получить:</strong></p>
+                                    <ul>
+                                        <li>бесплатную консультацию,</li>
+                                        <li>в некоторых случаях — бесплатного адвоката.</li>
+                                    </ul>
+                                    <p><strong>Обращаться можно:</strong></p>
+                                    <ul>
+                                        <li>в Центр по предоставлению гарантированной государством юридической помощи,</li>
+                                        <li>в местный суд,</li>
+                                        <li>в органы соцзащиты.</li>
+                                    </ul>
+                                    <p>Женщины, пострадавшие от насилия, имеют право на приоритетную помощь.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 15 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal2Ru">
+                                    Какие документы собирать для суда?
+                                </button>
+                            </h2>
+                            <div id="faqLegal2Ru" class="accordion-collapse collapse" data-bs-parent="#faqLegalRu">
+                                <div class="accordion-body">
+                                    <p><strong>Обычно нужны:</strong></p>
+                                    <ul>
+                                        <li>паспорт,</li>
+                                        <li>свидетельство о браке или разводе,</li>
+                                        <li>свидетельства о рождении детей,</li>
+                                        <li>документы на имущество,</li>
+                                        <li>справки о доходах,</li>
+                                        <li>доказательства насилия (если есть),</li>
+                                        <li>переписка, аудио, фото (при наличии).</li>
+                                    </ul>
+                                    <p>Лучше сохранять всё, что может подтвердить ваши слова.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 16 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal3Ru">
+                                    Я не знаю кыргызского языка. Смогу получить помощь?
+                                </button>
+                            </h2>
+                            <div id="faqLegal3Ru" class="accordion-collapse collapse" data-bs-parent="#faqLegalRu">
+                                <div class="accordion-body">
+                                    <p>Да.</p>
+                                    <p>Государственные органы обязаны обеспечивать возможность обращения на русском языке.</p>
+                                    <p>Если дело в суде — вы имеете право на переводчика.</p>
+                                    <p>Отказать в приеме заявления из-за языка не имеют права.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 17 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal4Ru">
+                                    Я живу в селе. Куда обращаться, если нет организаций?
+                                </button>
+                            </h2>
+                            <div id="faqLegal4Ru" class="accordion-collapse collapse" data-bs-parent="#faqLegalRu">
+                                <div class="accordion-body">
+                                    <p><strong>Вы можете:</strong></p>
+                                    <ul>
+                                        <li>Позвонить 102 (милиция).</li>
+                                        <li>Обратиться к участковому инспектору.</li>
+                                        <li>Обратиться в айыл окмоту.</li>
+                                        <li>Подать заявление через прокуратуру района.</li>
+                                        <li>Подать заявление в суд по месту жительства.</li>
+                                    </ul>
+                                    <p><strong>Также можно:</strong></p>
+                                    <ul>
+                                        <li>отправить письменное заявление по почте,</li>
+                                        <li>обратиться через родственников или доверенное лицо.</li>
+                                    </ul>
+                                    <p>Даже если вы живете в селе — ваши права такие же, как у жителей города.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4" data-aos="fade-up">
+                    <p class="text-muted">Не нашли ответ на свой вопрос? <a href="#contact">Напишите нам</a> — мы поможем!</p>
+                </div>
+            </div>
+        </section>
+                  <!-- НОВЫЙ РАЗДЕЛ: Бесплатная юридическая помощь (рус) -->
+        <section id="free-legal-aid" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Бесплатная юридическая помощь</h2>
+                
+                <div class="row justify-content-center mb-4" data-aos="fade-up">
+                    <div class="col-lg-10">
+                        <div class="alert alert-info" role="alert">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Важно:</strong> Во всех центрах помощь оказывается <strong>бесплатно</strong>. 
+                            Вы имеете право обратиться по любым вопросам, связанным с защитой ваших прав.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Быстрые контакты -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="card text-center p-4 h-100">
+                            <div class="display-4 text-primary mb-3">
+                                <i class="fas fa-phone-alt" style="color: #d63384;"></i>
+                            </div>
+                            <h4>Горячая линия</h4>
+                            <p class="display-6 fw-bold" style="color: #d63384;">114</p>
+                            <p class="text-muted">Информационно-консультативная помощь<br>Звонок бесплатный</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="card text-center p-4 h-100">
+                            <div class="display-4 text-primary mb-3">
+                                <i class="fas fa-globe" style="color: #d63384;"></i>
+                            </div>
+                            <h4>Онлайн-портал</h4>
+                            <a href="http://Jardam.kg" target="_blank" class="btn btn-primary btn-lg mt-2">Jardam.kg</a>
+                            <p class="text-muted mt-3">Бесплатные юридические консультации онлайн</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Программа Акысыз Адвокат -->
+                <div class="row mb-5" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card p-4" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4><i class="fas fa-tv me-2" style="color: #d63384;"></i> Программа «Акысыз Адвокат»</h4>
+                                    <p class="mb-2"><strong>Прямой эфир на «Общественном Первом канале»</strong></p>
+                                    <p>Каждый понедельник в 19:00</p>
+                                    <p><i class="fab fa-whatsapp me-2" style="color: #25D366;"></i> Оставляйте заявки: <strong>0505802060</strong></p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-size: 3rem; color: #d63384;">
+                                        <i class="fas fa-balance-scale"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вопросы, с которыми можно обращаться -->
+                <div class="row mb-5" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card p-4">
+                            <h4 class="mb-3"><i class="fas fa-question-circle me-2" style="color: #d63384;"></i> С какими вопросами можно обращаться?</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Оформление пособий и пенсий</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Жилищные вопросы</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Опекунство и отцовство</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Домашнее насилие</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Наследственные споры</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Защита прав потребителей</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Трудовые споры</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Административные нарушения</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> ДТП</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Защита собственности</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Развод и алименты</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Миграционные вопросы</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Земельные споры</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Взыскание долгов</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Составление документов</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Центры помощи по регионам -->
+                <h3 class="text-center mb-4" data-aos="fade-up">Центры помощи по регионам</h3>
+                
+                <!-- Бишкек -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white" style="background-color: #d63384 !important;">
+                                <h4 class="mb-0"><i class="fas fa-city me-2"></i> г. Бишкек</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>ул. М. Горького, 25, каб. 10</strong><br>
+                                        <small>Территориальное управление юстиции</small></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>ул. Уметалиева, 34</strong><br>
+                                        <small>Государственная нотариальная контора Октябрьского района</small></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>бул. Молодой Гвардии, 32</strong><br>
+                                        <small>Минюст КР</small></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>проспект Жибек-Жолу, 381</strong><br>
+                                        <small>Центр ГГЮП</small><br>
+                                        <i class="fas fa-phone"></i> (0704) 00 01 14</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Чуйская область -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-map-marker-alt me-2"></i> Чуйская область</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>г. Токмок, ул. Сарбагышева 84а</strong><br>
+                                        <small>Государственная нотариальная контора Чуйского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03138) 3-30-25, 6-30-26</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>с. Беловодское, ул. Ленина 37</strong><br>
+                                        <small>Государственная нотариальная контора Московского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03131) 5-54-38, 5-22-87</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Кант, ул. К. Маликова 3</strong><br>
+                                        <small>Государственная нотариальная контора Ысык-Атинского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03138) 3-30-25</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Кара-Балта, ул. Т. Кожомбердиева 102</strong><br>
+                                        <small>Государственная нотариальная контора Жайылского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03133) 3-50-68</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>с. Сокулук, ул. Фрунзе, 189</strong><br>
+                                        <small>Здание айыл өкмөтү аильного округа имени Крупской</small><br>
+                                        <i class="fas fa-phone"></i> (0558) 02 58 80</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Иссык-Кульская область -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-water me-2"></i> Иссык-Кульская область</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>г. Каракол, ул. Тыныстанова 21</strong><br>
+                                        <small>Городская Мэрия</small><br>
+                                        <i class="fas fa-phone"></i> (03922) 5-23-27</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Чолпон-Ата, ул. Советская 1</strong><br>
+                                        <small>Государственная районная администрация</small><br>
+                                        <i class="fas fa-phone"></i> (0702) 70-15-94</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Балыкчы, ул. Орозбаева 3</strong><br>
+                                        <small>Государственная районная администрация</small><br>
+                                        <i class="fas fa-phone"></i> (0550) 50-83-90</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ошская область -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Ошская область</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>г. Ош, ул. Ленина 312</strong><br>
+                                        <small>Территориальное Управление юстиции г. Ош и Ошской обл.</small><br>
+                                        <i class="fas fa-phone"></i> (03222) 5-63-56, 2-80-28</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Кара-Суу, ул. МЗЗ Ι</strong><br>
+                                        <small>Государственная нотариальная контора Алайского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03232) 5-23-56</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Ноокат, ул. А. Лутфуллаева б/н</strong><br>
+                                        <small>Государственная нотариальная контора Ноокатского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03230) 5-10-42</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>с. Кара-Кулжа, ул. Ч. Пазылова б/н</strong><br>
+                                        <small>Государственная нотариальная контора Кара-Кулжинского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03239) 5-07-32</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>с. Гулчо, ул. Нарматова б/н</strong><br>
+                                        <small>Государственная нотариальная контора Алайского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03234) 5-14-79</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>с. Араван, ул. Ленина 1</strong><br>
+                                        <small>Государственная нотариальная контора Араванского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03231) 5-09-01</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>с. Дароот-Коргон, ул. Сулайманова, 100</strong><br>
+                                        <small>Кабинет адвоката</small><br>
+                                        <i class="fas fa-phone"></i> (0773) 91-18-66</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Узгенский район, г. Узген, ул. Манаса, 130</strong><br>
+                                        <small>Здание районной государственной администрации</small><br>
+                                        <i class="fas fa-phone"></i> (0555) 80-61-05, (0777) 30-59-99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Жалал-Абадская область -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-tree me-2"></i> Жалал-Абадская область</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>г. Жалал-Абад, ул. Кыргыз Республикасы 139а</strong><br>
+                                        <small>Управление юстиции Жалал-Абадской обл.</small><br>
+                                        <i class="fas fa-phone"></i> (03722) 7-13-01, 7-39-50</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>с. Базар-Курган, ул. Бекмамат Осмонова 126</strong><br>
+                                        <small>Государственная администрация Базар-Курганского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03722) 7-39-50</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Кара-Көл, ул. Ленина 1</strong><br>
+                                        <small>Городская Мэрия</small><br>
+                                        <i class="fas fa-phone"></i> (0709) 45 21 30</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Аксыйский р-н, г. Кербен, ул. Ниязалы 7</strong><br>
+                                        <i class="fas fa-phone"></i> (0778) 70-09-30</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Баткенская область -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Баткенская область</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>г. Баткен, ул. 8-е марта 34</strong><br>
+                                        <small>Территориальное Управление юстиции Баткенской обл.</small><br>
+                                        <i class="fas fa-phone"></i> (03622) 5-00-62</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Исфана, ул. Кошмуратова 46</strong><br>
+                                        <small>Государственная администрация Лейлекского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (03622) 5-00-62</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>г. Кадамжай, ул. Орозбекова 1</strong><br>
+                                        <small>Государственная администрация Кадамжайского р-на</small><br>
+                                        <i class="fas fa-phone"></i> (0774) 11-00-88</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Таласская область -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Таласская область</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>г. Талас, ул. Ж. Тагайбаева 298</strong><br>
+                                <small>Территориальное Управление юстиции Таласской обл.</small><br>
+                                <i class="fas fa-phone"></i> (03422) 5-48-17</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Нарынская область -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Нарынская область</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>г. Нарын, ул. Мамбеталы уулу Таранчы 18</strong><br>
+                                        <small>Территориальное Управление юстиции Нарынской обл.</small><br>
+                                        <i class="fas fa-phone"></i> (03922) 5-23-27</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кочкорский р-н, с. Кочкор, ул. Исакеева 46</strong><br>
+                                        <small>Государственная районная администрация</small><br>
+                                        <i class="fas fa-phone"></i> (03535) 5-03-25, (0771) 06-67-30</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Ат-Башинский р-н, с. Ат-Баши, ул. Мутай Жунусова 11/1</strong><br>
+                                        <i class="fas fa-phone"></i> (0700) 70-87-92</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4" data-aos="fade-up">
+                    <p class="text-muted">
+                        <i class="fas fa-info-circle me-1"></i>
+                        Во всех центрах работают квалифицированные юристы и адвокаты системы ГГЮП.
+                        Приходите, вам обязательно помогут!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Контакты и форма (рус) -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Свяжитесь с нами</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="card p-4" data-aos="fade-right">
+                            <h4>Напишите нам</h4>
+                            <form id="contactFormRu" action="https://formspree.io/f/xqedyapb" method="POST">
+                                <div class="mb-3">
+                                    <label for="nameRu" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="nameRu" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailRu" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="emailRu" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageRu" class="form-label">Сообщение</label>
+                                    <textarea class="form-control" id="messageRu" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-4" data-aos="fade-left">
+                            <h4>Контактная информация</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 contact-item"><i class="fas fa-envelope"></i> Email: info@womenrights.kg</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-phone"></i> Телефон: +996 (312) 12-34-56</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-map-marker-alt"></i> Адрес: г. Бишкек, ул. Чуй, 123</li>
+                            </ul>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Кнопки для русской версии -->
+        <!-- Кнопка "Наверх" рус -->
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top-btn ru">
+            <i class="fas fa-arrow-up"></i> Наверх
+        </button>
+
+        <!-- Кнопка Telegram рус -->
+        <a href="https://t.me/PravaZhenshinKR_bot" target="_blank" class="telegram-btn ru">
+            <i class="fab fa-telegram-plane me-2"></i> Наш Telegram-бот
+        </a>
+    </div> <!-- конец русской версии -->
+
+    <!-- Кыргызская версия контента -->
+    <div class="lang-ky">
+        <!-- Главный экран (кырг) -->
+        <section id="home-ky" class="hero-section">
+            <div class="container">
+                <h1 class="display-4 fw-bold" data-aos="fade-down">Кыргызстандагы аялдардын укугун коргоо</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">Маалыматтык колдоо, юридикалык жардам жана кризистик борборлордун байланыштары</p>
+                <a href="#help-ky" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-phone-alt me-2"></i>Жардам керек</a>
+            </div>
+        </section>
+
+        <!-- О проекте (кырг) -->
+        <section id="about-ky" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Долбоор жөнүндө</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead text-center" data-aos="fade-up" data-aos-delay="100">
+                            Биздин сайт Кыргызстандагы ар бир аял өз укуктарын билип, кыйын кырдаалда тез жана ишенимдүү жардам ала алышы үчүн түзүлгөн. Биз аялдардын укуктарын коргоо, коопсуздугун камсыз кылуу жана адилеттүүлүккө жетүүсүнө көмөк көрсөтүү максатын көздөйбүз.
+                        </p>
+                        <p class="text-center" data-aos="fade-up" data-aos-delay="200">
+                            Бул жерде сиз мыйзамдар тууралуу актуалдуу маалыматтарды, пайдалуу кеңештерди, кризистик борборлордун жана ишеним телефондорунун байланыштарын таба аласыз. Ошондой эле зомбулукка, басмырлоого же башка укук бузууларга туш болгон учурда кайда жана кантип кайрылуу керектиги тууралуу түшүндүрмөлөр берилет.
+                        </p>
+                        <p class="text-center fw-bold" data-aos="fade-up" data-aos-delay="300">
+                            Биздин максат — ар бир аял өзүн корголгон, маалымдуу жана күчтүү сезиши үчүн шарт түзүү. Укугуңузду билиңиз, үнүңүздү угуза билиңиз, жардам суроодон коркпоңуз — биз сиз менен биргебиз.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Права женщин (аккордеон, кырг) -->
+        <section id="rights-ky" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Сиздин укуктарыңыз</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="rightsAccordionKy">
+                            <!-- Эмгек укуктары -->
+                            <div class="accordion-item" data-aos="fade-up">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneKy">
+                                        Эмгек укуктары
+                                    </button>
+                                </h2>
+                                <div id="collapseOneKy" class="accordion-collapse collapse show" data-bs-parent="#rightsAccordionKy">
+                                    <div class="accordion-body">
+                                        <p>Айымдар эмгек тармагында эркектер менен бирдей укуктарга ээ. Жумушка кабыл алууда, айлык төлөөнү аныктоодо же жумуштан бошотууда жынысына карата басмырлоого жол берилбейт. Кош бойлуулук жана төрөт боюнча өргүү мыйзам менен корголот.</p>
+                                        <p><strong>Укугуңуз бузулса:</strong></p>
+                                        <ol>
+                                            <li>Иш берүүчүгө жазуу түрүндө кайрылыңыз.</li>
+                                            <li>Эмгек инспекциясына арыз бериңиз.</li>
+                                            <li>Сотко кайрылып, укугуңузду коргоңуз.</li>
+                                            <li>Зыяндын ордун толтурууну талап кыла аласыз.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Үй-бүлөлүк зомбулуктан коргонуу -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoKy">
+                                        Үй-бүлөлүк зомбулуктан коргонуу
+                                    </button>
+                                </h2>
+                                <div id="collapseTwoKy" class="accordion-collapse collapse" data-bs-parent="#rightsAccordionKy">
+                                    <div class="accordion-body">
+                                        <p>Мыйзам физикалык, психологиялык, экономикалык жана сексуалдык зомбулукту тыюу салат. Жабырлануучу коргоо ордерин алууга жана убактылуу башпаанекке жайгашууга укуктуу.</p>
+                                        <p><strong>Зомбулук болсо:</strong></p>
+                                        <ol>
+                                            <li>Кооптуу абалда милиция чакырыңыз.</li>
+                                            <li>Арыз жазыңыз.</li>
+                                            <li>Коргоо ордерин талап кылыңыз.</li>
+                                            <li>Дарыгерге көрүнүп, жаракатты каттатыңыз.</li>
+                                            <li>Кризистик борборго кайрылыңыз.</li>
+                                        </ol>
+                                        <p class="mb-0">Сиз зомбулукка чыдоого милдеттүү эмессиз.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Репродуктивдик укуктар -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeKy">
+                                        Репродуктивдик укуктар
+                                    </button>
+                                </h2>
+                                <div id="collapseThreeKy" class="accordion-collapse collapse" data-bs-parent="#rightsAccordionKy">
+                                    <div class="accordion-body">
+                                        <p>Аял өз алдынча балалуу болуу же болбоо маселесин чечүүгө укуктуу. Медициналык кызматтар сиздин макулдугуңуз менен гана көрсөтүлөт. Ден соолук тууралуу маалымат купуя сакталууга тийиш.</p>
+                                        <p><strong>Укук бузулса:</strong></p>
+                                        <ul>
+                                            <li>Медициналык мекеменин жетекчилигине,</li>
+                                            <li>Саламаттык сактоо органдарына,</li>
+                                            <li>Сотко кайрылууга болот.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ажырашууда мүлктүк укуктар -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourKy">
+                                        Ажырашууда мүлктүк укуктар
+                                    </button>
+                                </h2>
+                                <div id="collapseFourKy" class="accordion-collapse collapse" data-bs-parent="#rightsAccordionKy">
+                                    <div class="accordion-body">
+                                        <p>Никеде чогуу топтолгон мүлк тең бөлүштүрүлөт. Никеге чейин алынган же мурас, белек катары алынган мүлк бөлүнбөйт.</p>
+                                        <p><strong>Эмне кылуу керек:</strong></p>
+                                        <ol>
+                                            <li>Мүлккө тиешелүү документтерди чогултуу.</li>
+                                            <li>Макулдашуу түзүүгө аракет кылуу.</li>
+                                            <li>Макулдашуу болбосо — сотко кайрылуу.</li>
+                                            <li>Балдар үчүн алимент талап кылуу.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Как получить помощь (кырг) -->
+        <section id="help-ky" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Жардамды кайдан алууга болот</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card p-4" data-aos="fade-right">
+                            <h4 class="mb-3">Ишеним телефондору жана кризистик борборлор</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 contact-item"><i class="fas fa-phone fa-fw"></i> <strong>112</strong> — Куткаруу кызматы (24/7)</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-phone fa-fw"></i> <strong>111</strong> — Балдардын ишеним телефону</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-phone fa-fw"></i> <strong>5200</strong> — Зомбулуктан жабыркагандар үчүн ишеним телефону (24/7, акысыз, жашыруун)</li>
+                            </ul>
+                            <p class="text-muted small">* Эгер номерлер жооп бербесе, 112ге чалыңыз.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-4" data-aos="fade-left">
+                            <h4 class="mb-3">Уюмдардын картасы</h4>
+                            <div class="map-container">
+                                <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Ab833749780c2a0dc3c5c2ac48ba308a5c279f9dcb2712d55b0c91704a69aba12&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+                            </div>
+                            <p class="mt-2 text-muted small">* Белгилер: кризистик борборлор, ИИБ, социалдык жардам борборлору.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Таблица контактов (та же, что и в русской версии) -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h4 class="mb-3" data-aos="fade-up">Кыргызстандагы кризистик борборлор</h4>
+                        <div class="table-responsive" data-aos="fade-up" data-aos-delay="100">
+                            <table class="table table-bordered table-striped table-contacts">
+                                <thead>
+                                    <tr>
+                                        <th>Аталышы</th>
+                                        <th>Дареги</th>
+                                        <th>Телефон(дор)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Кризисный Центр «Шанс»</td><td>г. Бишкек, Пр. Чуй, 207, к.509</td><td>+996 709 710320</td></tr>
+                                    <tr><td>Кризисный центр «Сезим»</td><td>г. Бишкек, ул. Табышалиева, 3</td><td>+996 312 512640</td></tr>
+                                    <tr><td>ОО «Энсан — Диамонд»</td><td>г. Ош, ул. Ленина, 205/105</td><td>+996 772 328960<br>+996 3222 22965</td></tr>
+                                    <tr><td>Кризисный Центр «Акылкарачач» при ОО «Эне назары»</td><td>Ошская обл., Алайский р-н, с. Гульча, ул. Набережная, 1</td><td>+996 555 281423<br>+996 776 281423</td></tr>
+                                    <tr><td>Кризисный Центр «Аруулан»</td><td>г. Ош, ул. Ленина, 205</td><td>+996 776 380777<br>+996 3222 55608</td></tr>
+                                    <tr><td>Кризисный Центр «Ак журок»</td><td>г. Ош, ул. Ленина, 205</td><td>+996 550 231329<br>+996 3222 45976</td></tr>
+                                    <tr><td>ОО Кризисный Центр «Мээрбан»</td><td>г. Ош, ул. Ленина, 312/23</td><td>+996 773 843461</td></tr>
+                                    <tr><td>НПО Кризисный Центр «Тендеш»</td><td>г. Нарын, ул. Кыргыза, 31/3</td><td>+996 700 257890<br>+996 3522 50270<br>+996 3522 95047</td></tr>
+                                    <tr><td>Кризисный Центр «Маана» при ОФЦЖИ «Аялзат»</td><td>г. Талас, ул. Тагайбаева, 274/2</td><td>+996 557 484713<br>+996 3422 55885</td></tr>
+                                    <tr><td>Кризисный Центр «Жаныл Мырза» при ОФ «Омур Булагы»</td><td>г. Баткен, ул. Сыдыкова, 3</td><td>+996 777 393077</td></tr>
+                                    <tr><td>Кризисный Центр «Каниет»</td><td>г. Джалал-Абад, ул. Б. Осмонова, 113</td><td>+996 3722 55084</td></tr>
+                                    <tr><td>ОО "Аялзат — развитие женских инициатив"</td><td>г. Каракол, ул. Абдрахманова, 105-14</td><td>+996 3922 51091<br>+996 553 835717</td></tr>
+                                    <tr><td>Кризисный центр «Алтынай»</td><td>г. Чолпон-Ата</td><td>+996 709 694550</td></tr>
+                                    <tr><td>Кризисный центр «Мээрман»</td><td>г. Каракол</td><td>+996 706 383637</td></tr>
+                                    <tr><td>Центр помощи и реабилитации женщин «Химая»</td><td>г. Каракол</td><td>+996 702 223535 (ишеним телефону)<br>+996 551 733390</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новости (кырг) с модальными окнами -->
+        <section id="news-ky" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Жаңылыктар жана окуялар</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Новость 1 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100">
+                            <img src="ph1.jpeg" class="card-img-top" alt="Жаңылык" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Үй-бүлөлүк зомбулукка каршы мыйзам катаалдашты</h5>
+                                <p class="card-text">2025-жылдын октябрында Кыргызстанда үй-бүлөлүк зомбулук үчүн жазаларды катаалдаткан мыйзамга кол коюлду...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal1Ky">
+                                    Толук окуу
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 2 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100">
+                            <img src="ph2.jpg" class="card-img-top" alt="Жаңылык" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Үй-бүлөлүк зомбулук учурлары кескин өскөн</h5>
+                                <p class="card-text">2024-жылдын 10 айында 14 000ден ашуун үй-бүлөлүк зомбулук катталган (өткөн жылга салыштырмалуу 37%га көп).</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal2Ky">
+                                    Толук окуу
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Новость 3 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100">
+                            <img src="рh3.jpg" class="card-img-top" alt="Жаңылык" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Талас облусундагы кайгылуу окуя</h5>
+                                <p class="card-text">2026-жылдын февралында аял күйөөсү тарабынан өрттөнүп, оор күйүк алган. Бул окуя коомчулуктун кеңири резонансына алып келди...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal3Ky">
+                                    Толук окуу
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- НОВЫЙ FAQ НА КЫРГЫЗСКОМ (все 17 вопросов) -->
+        <section id="faq-ky" class="py-5 faq-section">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Көп берилүүчү суроолор</h2>
+                
+                <!-- Раздел 1: Үй-бүлөлүк зомбулук жана коопсуздук (5 вопросов) -->
+                <div class="faq-category" data-aos="fade-up">
+                    <h3 class="faq-category-title"><i class="fas fa-shield-alt"></i> Үй-бүлөлүк зомбулук жана коопсуздук</h3>
+                    <div class="accordion" id="faqViolenceKy">
+                        <!-- Вопрос 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence1Ky">
+                                    Күйөөм мени урду, бирок милицияга арыз жазуудан корком. Андан кийин эмне болот? Андан бетер жаман болуп кетпейби?
+                                </button>
+                            </h2>
+                            <div id="faqViolence1Ky" class="accordion-collapse collapse" data-bs-parent="#faqViolenceKy">
+                                <div class="accordion-body">
+                                    <p>Эгер күйөөңүз сизге кол көтөрсө — бул мыйзам бузуу. Кыргызстанда үй-бүлөлүк зомбулукка каршы мыйзам бар жана мамлекет сизди коргоого милдеттүү.</p>
+                                    <p><strong>Эгер милицияга кайрылсаңыз:</strong></p>
+                                    <ol>
+                                        <li>102 номерине чаласыз же милицияга барасыз.</li>
+                                        <li>Арызыңызды сөзсүз кабыл алып, каттоого алышы керек.</li>
+                                        <li>Эгер кайра зомбулук жасоо коркунучу болсо, милиция 3 суткага чейин коргоо ордерин чыгара алат.</li>
+                                        <li>Андан кийин сот бул коргоону 30 суткага чейин узарта алат.</li>
+                                        <li>Эгер денеңизде жаракат болсо, медициналык экспертиза дайындалат.</li>
+                                    </ol>
+                                    <p><strong>Маанилүү:</strong> Сизди "жарашкыла" деп мажбурлоого укугу жок. Зомбулук — бул жөн эле үй-бүлөлүк уруш эмес, мыйзам бузуу.</p>
+                                    <p>"Андан бетер жаман болуп кетпейби?" деген суроо түшүнүктүү. Көп учурда зомбулук токтобойт, тескерисинче күчөйт. Ал эми мыйзам чара көргөндө, кайталануу коркунучу азаят.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence2Ky">
+                                    Коргоо ордери деген эмне? Ал чындап коргойбу?
+                                </button>
+                            </h2>
+                            <div id="faqViolence2Ky" class="accordion-collapse collapse" data-bs-parent="#faqViolenceKy">
+                                <div class="accordion-body">
+                                    <p>Коргоо ордери — бул зомбулук кылган адамга коюлган расмий тыюу.</p>
+                                    <p><strong>Ал төмөнкүлөргө тыюу сала алат:</strong></p>
+                                    <ul>
+                                        <li>сизге жакындаганга,</li>
+                                        <li>телефон чалганга же жазганга,</li>
+                                        <li>жумушуңузга барганга,</li>
+                                        <li>сиз менен бир үйдө жашаганга (үй анын атына катталса да),</li>
+                                        <li>коркутканга же куугунтуктаганга.</li>
+                                    </ul>
+                                    <p>Эгер ал ордерди бузса — айып пул, камак же башка жоопкерчилик каралат.</p>
+                                    <p>Бул жөн гана кагаз эмес. Аны бузуу — мыйзам бузуу болуп эсептелет.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence3Ky">
+                                    Биздин ортобузда балдар бар. Зомбулуктан улам кетсем, балдарымды алып коюшпайбы?
+                                </button>
+                            </h2>
+                            <div id="faqViolence3Ky" class="accordion-collapse collapse" data-bs-parent="#faqViolenceKy">
+                                <div class="accordion-body">
+                                    <p>Жок.</p>
+                                    <p>Эгер сиз өзүңүздү жана балдарыңызды коргоо үчүн кетсеңиз — бул туура чечим.</p>
+                                    <p>Мыйзам боюнча бала коопсуз жерде жашоого укуктуу. Эгер зомбулук атасы тарабынан болсо, бул тескерисинче анын ата-энелик укугун чектөөгө негиз болушу мүмкүн.</p>
+                                    <p>Камкордук органы балдарды төмөнкү учурда гана алып коюшу мүмкүн:</p>
+                                    <ul>
+                                        <li>балага түз коркунуч болсо,</li>
+                                        <li>ата-эне баланы карабаса,</li>
+                                        <li>зомбулук балага да жасалса.</li>
+                                    </ul>
+                                    <p>Эгер сиз баланы коргоп жатсаңыз — мыйзам сиз тарапта.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence4Ky">
+                                    Үйдө калуу кооптуу, бара турган жерим жок. Кайда барсам болот?
+                                </button>
+                            </h2>
+                            <div id="faqViolence4Ky" class="accordion-collapse collapse" data-bs-parent="#faqViolenceKy">
+                                <div class="accordion-body">
+                                    <p>Кыргызстанда кризистик борборлор бар. Алар зомбулуктан жабыркаган аялдарга жана балдарга жардам берет.</p>
+                                    <p><strong>Алар:</strong></p>
+                                    <ul>
+                                        <li>убактылуу башпаанек берет,</li>
+                                        <li>тамак-аш менен камсыздайт,</li>
+                                        <li>психолог жана юрист жардам берет,</li>
+                                        <li>коопсуз шарт түзөт.</li>
+                                    </ul>
+                                    <p>Башпаанектин дареги жашыруун сакталат.</p>
+                                    <p>Эгер шашылыш коркунуч болсо — дароо 102 номерине чалыңыз.</p>
+                                    <p>Ошондой эле участкалык инспекторго, социалдык коргоо бөлүмүнө же жергиликтүү бийликке кайрылсаңыз болот.</p>
+                                    <p>Сиз кооптуу жерде жашоого милдеттүү эмессиз.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqViolence5Ky">
+                                    Кайын энем мени дайыма кемсинтип, балдарды мага каршы коюп жатат. Бул зомбулукпу?
+                                </button>
+                            </h2>
+                            <div id="faqViolence5Ky" class="accordion-collapse collapse" data-bs-parent="#faqViolenceKy">
+                                <div class="accordion-body">
+                                    <p>Эгер бул дайыма кайталанса — бул психологиялык зомбулук болуп эсептелиши мүмкүн.</p>
+                                    <p><strong>Психологиялык зомбулукка төмөнкүлөр кирет:</strong></p>
+                                    <ul>
+                                        <li>дайыма мазактоо,</li>
+                                        <li>кемсинтүү,</li>
+                                        <li>коркутуу,</li>
+                                        <li>басым көрсөтүү,</li>
+                                        <li>балдарды ата-энеге каршы коюу.</li>
+                                    </ul>
+                                    <p>Бир жолку уруш — сөзсүз эле мыйзам бузуу эмес. Бирок дайыма кайталанып, сизге жана балдарга зыян тийгизсе — бул мыйзам боюнча каралышы мүмкүн.</p>
+                                    <p>Сиз:</p>
+                                    <ul>
+                                        <li>далилдерди сактай аласыз (билдирүүлөр, күбөлөр),</li>
+                                        <li>участкалыкка кайрыла аласыз,</li>
+                                        <li>камкордук органына кайрыла аласыз.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Раздел 2: Эмгек укуктары (4 вопроса) -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="faq-category-title"><i class="fas fa-briefcase"></i> Эмгек укуктары</h3>
+                    <div class="accordion" id="faqWorkKy">
+                        <!-- Вопрос 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork1Ky">
+                                    Мен кош бойлуумун, жетекчим "өз каалооң менен жумуштан кет" деп жатат. Эмне кылсам болот?
+                                </button>
+                            </h2>
+                            <div id="faqWork1Ky" class="accordion-collapse collapse" data-bs-parent="#faqWorkKy">
+                                <div class="accordion-body">
+                                    <p>Кош бойлуу аялды мажбурлап жумуштан кетирүү — мыйзамсыз.</p>
+                                    <p>Эмгек кодексине ылайык:</p>
+                                    <ul>
+                                        <li>Кош бойлуу аялды иш берүүчү өз демилгеси менен жумуштан бошото албайт (мекеме толук жабылган учурдан башка).</li>
+                                        <li>Сизди "өз каалоом менен кетем" деп арыз жазууга мажбурлоого укугу жок.</li>
+                                        <li>Сизге кош бойлуулук жана төрөт боюнча өргүү берилиши керек, жумуш орду сакталат.</li>
+                                    </ul>
+                                    <p><strong>Эмне кылуу керек:</strong></p>
+                                    <ul>
+                                        <li>"Өз каалоом менен" деген арыз жазбаңыз.</li>
+                                        <li>Басым болсо, далилдерди сактаңыз (каттар, билдирүүлөр).</li>
+                                        <li>Эмгек инспекциясына же прокуратурага кайрылыңыз.</li>
+                                    </ul>
+                                    <p>Эгер өзүңүз арыз жазып берсеңиз, кийин далилдөө кыйын болот.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork2Ky">
+                                    Мага эркектерге караганда аз айлык төлөшөт. Бул мыйзамдуубу?
+                                </button>
+                            </h2>
+                            <div id="faqWork2Ky" class="accordion-collapse collapse" data-bs-parent="#faqWorkKy">
+                                <div class="accordion-body">
+                                    <p>Жок. Бирдей иш үчүн бирдей айлык төлөнүшү керек.</p>
+                                    <p>Кыргызстанда жынысына карата басмырлоого тыюу салынат.</p>
+                                    <p><strong>Эмне кылуу керек:</strong></p>
+                                    <ul>
+                                        <li>Кызматтык милдеттерди салыштыруу.</li>
+                                        <li>Жумуш көлөмүн салыштыруу.</li>
+                                        <li>Мүмкүн болсо, айлык тууралуу маалымат чогултуу.</li>
+                                        <li>Күбөлөрдү табуу.</li>
+                                    </ul>
+                                    <p><strong>Кайда кайрылуу керек:</strong></p>
+                                    <ul>
+                                        <li>Эмгек инспекциясына,</li>
+                                        <li>Прокуратурага,</li>
+                                        <li>Сотко.</li>
+                                    </ul>
+                                    <p>Эгер мыйзам бузуу аныкталса, айырмасын төлөтүүгө болот.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 8 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork3Ky">
+                                    Жумуш берүүчү 2 айдан бери айлык бербей жатат. Кайда кайрылам?
+                                </button>
+                            </h2>
+                            <div id="faqWork3Ky" class="accordion-collapse collapse" data-bs-parent="#faqWorkKy">
+                                <div class="accordion-body">
+                                    <p>Бул мыйзам бузуу.</p>
+                                    <p>Айлык өз убагында төлөнүшү керек. Кечиккен ар бир күн үчүн компенсация төлөнөт.</p>
+                                    <p><strong>Кайрылуу тартиби:</strong></p>
+                                    <ol>
+                                        <li>Эмгек инспекциясына.</li>
+                                        <li>Прокуратурага.</li>
+                                        <li>Сотко (айлыкты жана компенсацияны өндүрүү үчүн).</li>
+                                    </ol>
+                                    <p>Узак убакыт төлөнбөсө, жазуу түрүндө эскертүү берип, ишти убактылуу токтотууга да укугуңуз бар.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 9 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWork4Ky">
+                                    "Жумуш жок" деп мени акы төлөнбөгөн өргүүгө мажбурлап жатышат. Бул мыйзамдуубу?
+                                </button>
+                            </h2>
+                            <div id="faqWork4Ky" class="accordion-collapse collapse" data-bs-parent="#faqWorkKy">
+                                <div class="accordion-body">
+                                    <p>Жок.</p>
+                                    <p>Акы төлөнбөгөн өргүү — кызматкердин өз каалоосу менен гана берилет.</p>
+                                    <p>Жумуш жок болсо — бул иш берүүчүнүн жоопкерчилиги. Ал жөнөкөй токтоп калуу үчүн төлөм берүүгө тийиш.</p>
+                                    <p>Сизди мажбурлап "өз эсебиңден өргүүгө чык" деп айтууга укугу жок.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Раздел 3: Ажырашуу, балдар жана мүлк (4 вопроса) -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="faq-category-title"><i class="fas fa-heart-broken"></i> Ажырашуу, балдар жана мүлк</h3>
+                    <div class="accordion" id="faqFamilyKy">
+                        <!-- Вопрос 10 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily1Ky">
+                                    Күйөөм ажырашууга макул эмес жана балдарды бербейм деп коркутууда. Эмне кылсам болот?
+                                </button>
+                            </h2>
+                            <div id="faqFamily1Ky" class="accordion-collapse collapse" data-bs-parent="#faqFamilyKy">
+                                <div class="accordion-body">
+                                    <p>Эгер жубайлардын бири ажырашкысы келсе — сот аркылуу нике бузулат.</p>
+                                    <p><strong>Сот:</strong></p>
+                                    <ul>
+                                        <li>никени бузат,</li>
+                                        <li>балдардын ким менен жашаарын аныктайт,</li>
+                                        <li>экинчи ата-эненин жолугушуу тартибин белгилейт.</li>
+                                    </ul>
+                                    <p>Күйөөңүз ажырашууга "уруксат бербейм" деп тыюу сала албайт.</p>
+                                    <p>Эгер коркутуу болсо — милицияга кайрылып, далилдерди сактаңыз.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 11 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily2Ky">
+                                    Мурунку күйөөм расмий иштебейт. Кантип алимент алам?
+                                </button>
+                            </h2>
+                            <div id="faqFamily2Ky" class="accordion-collapse collapse" data-bs-parent="#faqFamilyKy">
+                                <div class="accordion-body">
+                                    <p>Расмий иштебегени алимент төлөбөй коюуга себеп болбойт.</p>
+                                    <p><strong>Сот:</strong></p>
+                                    <ul>
+                                        <li>кирешесинин пайызын, же</li>
+                                        <li>туруктуу акчалай сумманы белгилейт.</li>
+                                    </ul>
+                                    <p><strong>Эгер төлөбөсө:</strong></p>
+                                    <ul>
+                                        <li>сот аткаруучулар иш алып барат,</li>
+                                        <li>мүлкүн камакка алышы мүмкүн,</li>
+                                        <li>чет өлкөгө чыгууга тыюу салынышы мүмкүн,</li>
+                                        <li>жоопкерчиликке тартылышы мүмкүн.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 12 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily3Ky">
+                                    Батир никеде алынган, бирок күйөөмдүн атына катталган. Менин укугум барбы?
+                                </button>
+                            </h2>
+                            <div id="faqFamily3Ky" class="accordion-collapse collapse" data-bs-parent="#faqFamilyKy">
+                                <div class="accordion-body">
+                                    <p>Ооба.</p>
+                                    <p>Никеде алынган мүлк — орток мүлк болуп эсептелет, кимдин атына катталса да.</p>
+                                    <p>Ажырашууда адатта тең бөлүнөт.</p>
+                                    <p><strong>Керектүү документтер:</strong></p>
+                                    <ul>
+                                        <li>сатып алуу келишими,</li>
+                                        <li>нике тууралуу күбөлүк,</li>
+                                        <li>мүлккө тиешелүү документтер.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 13 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFamily4Ky">
+                                    Мурунку күйөөм баланы чет өлкөгө алып кетем деп коркутууда. Кантип алдын алам?
+                                </button>
+                            </h2>
+                            <div id="faqFamily4Ky" class="accordion-collapse collapse" data-bs-parent="#faqFamilyKy">
+                                <div class="accordion-body">
+                                    <p><strong>Сиз:</strong></p>
+                                    <ul>
+                                        <li>сотко кайрылып, баланы сиздин макулдугуңузсуз чыгарууга тыюу салууну сурансаңыз болот.</li>
+                                        <li>Чек ара кызматына арыз жазсаңыз болот.</li>
+                                        <li>Реалдуу коркунуч болсо, милицияга кайрылуу керек.</li>
+                                    </ul>
+                                    <p>Мындай чараларды алдын ала көргөн туура.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Раздел 4: Юридикалык жана практикалык суроолор (4 вопроса) -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="faq-category-title"><i class="fas fa-gavel"></i> Юридикалык жана практикалык суроолор</h3>
+                    <div class="accordion" id="faqLegalKy">
+                        <!-- Вопрос 14 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal1Ky">
+                                    Адвокатка акчам жок. Кантип бекер жардам алам?
+                                </button>
+                            </h2>
+                            <div id="faqLegal1Ky" class="accordion-collapse collapse" data-bs-parent="#faqLegalKy">
+                                <div class="accordion-body">
+                                    <p>Кыргызстанда мамлекет тарабынан кепилденген юридикалык жардам бар.</p>
+                                    <p><strong>Сиз:</strong></p>
+                                    <ul>
+                                        <li>бекер консультация ала аласыз,</li>
+                                        <li>айрым учурларда бекер адвокат берилет.</li>
+                                    </ul>
+                                    <p><strong>Кайрылсаңыз болот:</strong></p>
+                                    <ul>
+                                        <li>Мамлекет кепилдеген юридикалык жардам борборуна,</li>
+                                        <li>Сотко,</li>
+                                        <li>Социалдык коргоо бөлүмүнө.</li>
+                                    </ul>
+                                    <p>Үй-бүлөлүк зомбулуктан жабыркагандарга артыкчылык берилет.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 15 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal2Ky">
+                                    Сотко кайрылуу үчүн кандай документтер керек?
+                                </button>
+                            </h2>
+                            <div id="faqLegal2Ky" class="accordion-collapse collapse" data-bs-parent="#faqLegalKy">
+                                <div class="accordion-body">
+                                    <p><strong>Негизинен:</strong></p>
+                                    <ul>
+                                        <li>паспорт,</li>
+                                        <li>нике күбөлүгү,</li>
+                                        <li>балдардын туулгандыгы тууралуу күбөлүк,</li>
+                                        <li>мүлк документтери,</li>
+                                        <li>киреше тууралуу маалымкат,</li>
+                                        <li>зомбулук боюнча далилдер (эгер бар болсо),</li>
+                                        <li>кат алышуулар, сүрөттөр.</li>
+                                    </ul>
+                                    <p>Колуңуздагы бардык далилдерди сактаңыз.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 16 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal3Ky">
+                                    Мен кыргыз тилин билбейм. Мамлекеттик органдар жардам береби?
+                                </button>
+                            </h2>
+                            <div id="faqLegal3Ky" class="accordion-collapse collapse" data-bs-parent="#faqLegalKy">
+                                <div class="accordion-body">
+                                    <p>Ооба.</p>
+                                    <p>Сиз орус тилинде кайрылууга укуктуусуз.</p>
+                                    <p>Сотто котормочу талап кылууга укугуңуз бар.</p>
+                                    <p>Тилди билбегениңиз үчүн арызыңызды кабыл албай коюуга болбойт.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вопрос 17 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLegal4Ky">
+                                    Мен айылда жашайм. Бизге мындай уюмдар келбейт. Эмне кылсам болот?
+                                </button>
+                            </h2>
+                            <div id="faqLegal4Ky" class="accordion-collapse collapse" data-bs-parent="#faqLegalKy">
+                                <div class="accordion-body">
+                                    <p><strong>Сиз:</strong></p>
+                                    <ul>
+                                        <li>102 номерине чалсаңыз болот,</li>
+                                        <li>участкалык инспекторго кайрылсаңыз болот,</li>
+                                        <li>айыл өкмөтүнө барсаңыз болот,</li>
+                                        <li>райондук прокуратурага кайрылсаңыз болот,</li>
+                                        <li>жашаган жериңиз боюнча сотко арыз берсеңиз болот.</li>
+                                    </ul>
+                                    <p>Ошондой эле:</p>
+                                    <ul>
+                                        <li>арызды почта аркылуу жөнөтсө болот,</li>
+                                        <li>ишеним кат аркылуу өкүл жиберсе болот.</li>
+                                    </ul>
+                                    <p>Айылда жашасаңыз да, сиздин укуктарыңыз шаардагылар менен бирдей.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4" data-aos="fade-up">
+                    <p class="text-muted">Сурооңузга жооп таппадыңызбы? <a href="#contact-ky">Бизге жазыңыз</a> — биз жардам беребиз!</p>
+                </div>
+            </div>
+        </section>
+                 <!-- НОВЫЙ РАЗДЕЛ: Акысыз юридикалык жардам (кырг) -->
+        <section id="free-legal-aid-ky" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Акысыз юридикалык жардам</h2>
+                
+                <div class="row justify-content-center mb-4" data-aos="fade-up">
+                    <div class="col-lg-10">
+                        <div class="alert alert-info" role="alert">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Маанилүү:</strong> Бардык борборлордо жардам <strong>акысыз</strong> көрсөтүлөт.
+                            Сиз өз укугуңузду коргоо боюнча каалаган суроо менен кайрыла аласыз.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Тез байланыштар -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="card text-center p-4 h-100">
+                            <div class="display-4 text-primary mb-3">
+                                <i class="fas fa-phone-alt" style="color: #d63384;"></i>
+                            </div>
+                            <h4>Ишеним телефону</h4>
+                            <p class="display-6 fw-bold" style="color: #d63384;">114</p>
+                            <p class="text-muted">Маалыматтык-кеңеш берүү кызматы<br>Чалуу акысыз</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="card text-center p-4 h-100">
+                            <div class="display-4 text-primary mb-3">
+                                <i class="fas fa-globe" style="color: #d63384;"></i>
+                            </div>
+                            <h4>Онлайн-портал</h4>
+                            <a href="http://Jardam.kg" target="_blank" class="btn btn-primary btn-lg mt-2">Jardam.kg</a>
+                            <p class="text-muted mt-3">Акысыз онлайн кеңештер</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Акысыз Адвокат программасы -->
+                <div class="row mb-5" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card p-4" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4><i class="fas fa-tv me-2" style="color: #d63384;"></i> «Акысыз Адвокат» программасы</h4>
+                                    <p class="mb-2"><strong>«Коомдук Биринчи каналда» түз эфир</strong></p>
+                                    <p>Дүйшөмбү күндөрү саат 19:00дө</p>
+                                    <p><i class="fab fa-whatsapp me-2" style="color: #25D366;"></i> Кайрылууларды калтырыңыз: <strong>0505802060</strong></p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-size: 3rem; color: #d63384;">
+                                        <i class="fas fa-balance-scale"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кайсы суроолор менен кайрылса болот -->
+                <div class="row mb-5" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card p-4">
+                            <h4 class="mb-3"><i class="fas fa-question-circle me-2" style="color: #d63384;"></i> Кайсы суроолор менен кайрылса болот?</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Жөлөк пул жана пенсия</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Турак-жай маселелери</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Камкордук жана аталык</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Үй-бүлөлүк зомбулук</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Мурас талаштары</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Керектөөчүлөрдүн укуктары</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Эмгек талаштары</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Административдик бузуулар</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Жол кырсыктары</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Мүлктү коргоо</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Ажырашуу жана алимент</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Миграция маселелери</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Жер талаштары</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Карыздарды өндүрүү</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Документтерди түзүү</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                               <!-- Региондор боюнча жардам борборлору -->
+                <h3 class="text-center mb-4" data-aos="fade-up">Региондор боюнча жардам борборлору</h3>
+                
+                <!-- Бишкек шаары -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white" style="background-color: #d63384 !important;">
+                                <h4 class="mb-0"><i class="fas fa-city me-2"></i> Бишкек шаары</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>М. Горький көч., 25, каб. 10</strong><br>
+                                        <small>Адилеттиктин аймактык башкармалыгы</small></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Уметалиев көч., 34</strong><br>
+                                        <small>Октябрь районунун мамлекеттик нотариалдык конторасы</small></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Жаш Гвардия бульвары, 32</strong><br>
+                                        <small>КР Юстиция министрлиги</small></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Жибек-Жолу проспектиси, 381</strong><br>
+                                        <small>Мамлекет кепилдеген юридикалык жардам борбору</small><br>
+                                        <i class="fas fa-phone"></i> (0704) 00 01 14</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Чүй облусу -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-map-marker-alt me-2"></i> Чүй облусу</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Токмок шаары, Сарбагышев көч., 84а</strong><br>
+                                        <small>Чүй районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03138) 3-30-25, 6-30-26</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Беловодское айылы, Ленин көч., 37</strong><br>
+                                        <small>Москва районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03131) 5-54-38, 5-22-87</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кант шаары, К. Маликов көч., 3</strong><br>
+                                        <small>Ысык-Ата районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03138) 3-30-25</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кара-Балта шаары, Т. Кожомбердиев көч., 102</strong><br>
+                                        <small>Жайыл районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03133) 3-50-68</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Сокулук айылы, Фрунзе көч., 189</strong><br>
+                                        <small>Крупский айыл өкмөтүнүн имараты</small><br>
+                                        <i class="fas fa-phone"></i> (0558) 02 58 80</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ысык-Көл облусу -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-water me-2"></i> Ысык-Көл облусу</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Каракол шаары, Тыныстанов көч., 21</strong><br>
+                                        <small>Шаардык мэрия</small><br>
+                                        <i class="fas fa-phone"></i> (03922) 5-23-27</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Чолпон-Ата шаары, Советская көч., 1</strong><br>
+                                        <small>Мамлекеттик райондук администрация</small><br>
+                                        <i class="fas fa-phone"></i> (0702) 70-15-94</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Балыкчы шаары, Орозбаев көч., 3</strong><br>
+                                        <small>Мамлекеттик райондук администрация</small><br>
+                                        <i class="fas fa-phone"></i> (0550) 50-83-90</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ош облусу -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Ош облусу</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Ош шаары, Ленин көч., 312</strong><br>
+                                        <small>Ош шаары жана Ош облусу боюнча адилеттиктин аймактык башкармалыгы</small><br>
+                                        <i class="fas fa-phone"></i> (03222) 5-63-56, 2-80-28</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кара-Суу шаары, МЗЗ Ι көч.</strong><br>
+                                        <small>Алай районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03232) 5-23-56</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Ноокат шаары, А. Лутфуллаев көч., б/н</strong><br>
+                                        <small>Ноокат районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03230) 5-10-42</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кара-Кулжа айылы, Ч. Пазылов көч., б/н</strong><br>
+                                        <small>Кара-Кулжа районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03239) 5-07-32</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Гүлчө айылы, Нарматов көч., б/н</strong><br>
+                                        <small>Алай районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03234) 5-14-79</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Араван айылы, Ленин көч., 1</strong><br>
+                                        <small>Араван районунун мамлекеттик нотариалдык конторасы</small><br>
+                                        <i class="fas fa-phone"></i> (03231) 5-09-01</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Дароот-Коргон айылы, Сулайманов көч., 100</strong><br>
+                                        <small>Адвокаттын кабинети</small><br>
+                                        <i class="fas fa-phone"></i> (0773) 91-18-66</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Өзгөн району, Өзгөн шаары, Манас көч., 130</strong><br>
+                                        <small>Райондук мамлекеттик администрациянын имараты</small><br>
+                                        <i class="fas fa-phone"></i> (0555) 80-61-05, (0777) 30-59-99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Жалал-Абад облусу -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-tree me-2"></i> Жалал-Абад облусу</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Жалал-Абад шаары, Кыргыз Республикасы көч., 139а</strong><br>
+                                        <small>Жалал-Абад облусу боюнча адилеттик башкармалыгы</small><br>
+                                        <i class="fas fa-phone"></i> (03722) 7-13-01, 7-39-50</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Базар-Коргон айылы, Бекмамат Осмонов көч., 126</strong><br>
+                                        <small>Базар-Коргон районунун мамлекеттик администрациясы</small><br>
+                                        <i class="fas fa-phone"></i> (03722) 7-39-50</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кара-Көл шаары, Ленин көч., 1</strong><br>
+                                        <small>Шаардык мэрия</small><br>
+                                        <i class="fas fa-phone"></i> (0709) 45 21 30</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Аксы району, Кербен шаары, Ниязалы көч., 7</strong><br>
+                                        <i class="fas fa-phone"></i> (0778) 70-09-30</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Баткен облусу -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Баткен облусу</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Баткен шаары, 8-март көч., 34</strong><br>
+                                        <small>Баткен облусу боюнча адилеттиктин аймактык башкармалыгы</small><br>
+                                        <i class="fas fa-phone"></i> (03622) 5-00-62</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Исфана шаары, Кошмуратов көч., 46</strong><br>
+                                        <small>Лейлек районунун мамлекеттик администрациясы</small><br>
+                                        <i class="fas fa-phone"></i> (03622) 5-00-62</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кадамжай шаары, Орозбеков көч., 1</strong><br>
+                                        <small>Кадамжай районунун мамлекеттик администрациясы</small><br>
+                                        <i class="fas fa-phone"></i> (0774) 11-00-88</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Талас облусу -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Талас облусу</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Талас шаары, Ж. Тагайбаев көч., 298</strong><br>
+                                <small>Талас облусу боюнча адилеттиктин аймактык башкармалыгы</small><br>
+                                <i class="fas fa-phone"></i> (03422) 5-48-17</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Нарын облусу -->
+                <div class="row mb-4" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #d63384; color: white;">
+                                <h4 class="mb-0"><i class="fas fa-mountain me-2"></i> Нарын облусу</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Нарын шаары, Мамбеталы уулу Таранчы көч., 18</strong><br>
+                                        <small>Нарын облусу боюнча адилеттиктин аймактык башкармалыгы</small><br>
+                                        <i class="fas fa-phone"></i> (03922) 5-23-27</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Кочкор району, Кочкор айылы, Исакеев көч., 46</strong><br>
+                                        <small>Мамлекеттик райондук администрация</small><br>
+                                        <i class="fas fa-phone"></i> (03535) 5-03-25, (0771) 06-67-30</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Ат-Башы району, Ат-Башы айылы, Мутай Жунусов көч., 11/1</strong><br>
+                                        <i class="fas fa-phone"></i> (0700) 70-87-92</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  
+        </section>
+        <!-- Контакты и форма (кырг) -->
+        <section id="contact-ky" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title" data-aos="fade-up">Биз менен байланышыңыз</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="card p-4" data-aos="fade-right">
+                            <h4>Бизге жазыңыз</h4>
+                          
+                                  <form id="contactFormKy" action="https://formspree.io/f/xqedyapb" method="POST">
+                                <div class="mb-3">
+                                    <label for="nameKy" class="form-label">Атыңыз</label>
+                                    <input type="text" class="form-control" id="nameKy" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailKy" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="emailKy" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageKy" class="form-label">Билдирүү</label>
+                                    <textarea class="form-control" id="messageKy" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Жөнөтүү</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-4" data-aos="fade-left">
+                            <h4>Байланыш маалыматтары</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 contact-item"><i class="fas fa-envelope"></i> Email: info@womenrights.kg</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-phone"></i> Телефон: +996 (312) 12-34-56</li>
+                                <li class="mb-3 contact-item"><i class="fas fa-map-marker-alt"></i> Дарек: Бишкек ш., Чуй к., 123</li>
+                            </ul>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-primary"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Кнопки для кыргызской версии -->
+        <!-- Кнопка "Наверх" кырг -->
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top-btn ky">
+            <i class="fas fa-arrow-up"></i> Жогору
+        </button>
+
+        <!-- Кнопка Telegram кырг -->
+        <a href="https://t.me/PravaZhenshinKR_bot" target="_blank" class="telegram-btn ky">
+            <i class="fab fa-telegram-plane me-2"></i> Биздин Telegram-бот
+        </a>
+    </div> <!-- конец кыргызской версии -->
+
+    <!-- Подвал (общий) -->
+    <footer>
+        <div class="container text-center">
+            <p>© 2025 Защита прав женщин в Кыргызстане. Дипломный проект.</p>
+            <div class="mt-2 text-muted small">
+                <i class="fas fa-eye me-1"></i> Просмотров: <span id="visitCount">0</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна для новостей (рус) -->
+    <div class="modal fade" id="newsModal1Ru" tabindex="-1" aria-labelledby="newsModal1RuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal1RuLabel">Усиление мер против семейного насилия</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="ph1.jpeg" class="img-fluid mb-3 rounded" alt="Новости">
+                    <p class="text-muted"><i class="far fa-calendar-alt me-2"></i> 21 февраля 2026</p>
+                    <p>В октябре 2025 года в Кыргызстане был подписан новый закон, который ужесточает наказания за домашнее насилие и расширяет полномочия правоохранительных органов для предупреждения таких преступлений.</p>
+                    <p><strong>Ключевые изменения:</strong></p>
+                    <ul>
+                        <li>Увеличение срока административного ареста за совершение насилия</li>
+                        <li>Введение электронного контроля за нарушителями (электронные браслеты)</li>
+                        <li>Обязательная оценка риска при каждом сообщении о семейном насилии</li>
+                        <li>Усиление ответственности за повторные случаи насилия</li>
+                    </ul>
+                    <p>Правозащитники приветствуют новые меры, но отмечают, что важно также работать над профилактикой насилия и поддержкой пострадавших. Новый закон также предусматривает создание дополнительных кризисных центров и убежищ для женщин.</p>
+                    <p class="fw-bold">Если вы столкнулись с насилием — не молчите, обращайтесь за помощью!</p>
+                </div>
+            <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+    <a href="https://cbd.minjust.gov.kg/6-16647/edition/38936/ru" target="_blank" class="btn btn-primary">Подробнее на сайте</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newsModal2Ru" tabindex="-1" aria-labelledby="newsModal2RuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal2RuLabel">Резкий рост случаев домашнего насилия</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="ph2.jpg" class="img-fluid mb-3 rounded" alt="Новости">
+                    <p class="text-muted"><i class="far fa-calendar-alt me-2"></i> 15 января 2026</p>
+                    <p>По данным Министерства внутренних дел Кыргызской Республики, за 10 месяцев 2024 года было зарегистрировано более <strong>14 000 случаев семейного насилия</strong>, что на 37% больше, чем в предыдущем году.</p>
+                    <p><strong>Статистика:</strong></p>
+                    <ul>
+                        <li>Почти 12 000 временных охранных ордеров выданы в отношении лиц, совершивших насилие</li>
+                        <li>Большинство нарушителей — мужчины (92%)</li>
+                        <li>Сотни детей оказались вовлечены в такие случаи (как свидетели или пострадавшие)</li>
+                        <li>Рост обращений на горячую линию 111 составил 45%</li>
+                    </ul>
+                    <p>Эксперты связывают рост статистики не только с ухудшением ситуации, но и с повышением доверия к правоохранительным органам и готовностью женщин обращаться за помощью. Однако многие случаи по-прежнему остаются скрытыми.</p>
+                </div>
+                <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+    <a href="https://mvd.gov.kg/rus/domesticViolence/reports/40" target="_blank" class="btn btn-primary">Подробнее на сайте МВД</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newsModal3Ru" tabindex="-1" aria-labelledby="newsModal3RuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal3RuLabel">Трагический случай в Таласской области</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="рh3.jpg" class="img-fluid mb-3 rounded" alt="Новости">
+                    <p class="text-muted"><i class="far fa-calendar-alt me-2"></i> 10 февраля 2026</p>
+                    <p>В феврале 2026 года в Таласской области произошёл трагический инцидент: женщина получила тяжёлые ожоги после того, как её муж облил её бензином и поджёг. Пострадавшая доставлена в ожоговый центр в тяжёлом состоянии.</p>
+                    <p>Этот случай вызвал широкий общественный резонанс и стал поводом для акций с требованием усилить меры против семейного насилия со стороны властей. Активисты провели пикеты у здания правительства и МВД.</p>
+                    <p><strong>Реакция властей:</strong> Генеральная прокуратура взяла дело под особый контроль. Возбуждено уголовное дело по статье "Покушение на убийство".</p>
+                    <p class="fw-bold text-danger">Если вы в опасности — немедленно звоните 112!</p>
+                </div>
+                   <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+    <a href="https://24.kg/proisshestvija/360988_muj_podjeg_jenu_benzinom_vmerii_talasa_oprovergayut_chto_eto_eesotrudnik/" target="_blank" class="btn btn-primary">Читать на 24.kg</a>
+    <a href="#help" class="btn btn-outline-primary">Контакты помощи</a>
+</div>
+       
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальные окна для новостей (кырг) -->
+    <div class="modal fade" id="newsModal1Ky" tabindex="-1" aria-labelledby="newsModal1KyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal1KyLabel">Үй-бүлөлүк зомбулукка каршы мыйзам катаалдашты</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Жабуу"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="ph1.jpeg" class="img-fluid mb-3 rounded" alt="Жаңылык">
+                    <p class="text-muted"><i class="far fa-calendar-alt me-2"></i> 21-февраль 2026</p>
+                    <p>2025-жылдын октябрында Кыргызстанда үй-бүлөлүк зомбулук үчүн жазаларды катаалдаткан жана укук коргоо органдарынын мындай кылмыштардын алдын алуу ыйгарым укуктарын кеңейткен жаңы мыйзамга кол коюлган.</p>
+                    <p><strong>Негизги өзгөртүүлөр:</strong></p>
+                    <ul>
+                        <li>Зомбулук жасагандыгы үчүн административдик камак мөөнөтүн узартуу</li>
+                        <li>Бузуучуларды электрондук көзөмөлдөө (электрондук билериктер)</li>
+                        <li>Үй-бүлөлүк зомбулук жөнүндө ар бир билдирүүдө тобокелдикти милдеттүү баалоо</li>
+                        <li>Кайталанган зомбулук учурлары үчүн жоопкерчиликти күчөтүү</li>
+                    </ul>
+                    <p>Укук коргоочулар жаңы чараларды кубатташат, бирок зомбулуктун алдын алуу жана жабыркагандарды колдоо боюнча иштөө да маанилүү экенин белгилешет. Жаңы мыйзам ошондой эле кошумча кризистик борборлорду жана аялдар үчүн башпаанектерди түзүүнү карайт.</p>
+                    <p class="fw-bold">Эгер зомбулукка туш болсоңуз — үнүңүздү чыгарыңыз, жардам сураңыз!</p>
+                </div>
+             <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Жабуу</button>
+    <a href="https://cbd.minjust.gov.kg/6-16647/edition/38936/kg" target="_blank" class="btn btn-primary">Толук маалымат</a>
+</div>    </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newsModal2Ky" tabindex="-1" aria-labelledby="newsModal2KyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal2KyLabel">Үй-бүлөлүк зомбулук учурлары кескин өскөн</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Жабуу"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="ph2.jpg" class="img-fluid mb-3 rounded" alt="Жаңылык">
+                    <p class="text-muted"><i class="far fa-calendar-alt me-2"></i> 15-январь 2026</p>
+                    <p>КР Ички иштер министрлигинин маалыматы боюнча, 2024-жылдын 10 айында <strong>14 000ден ашуун үй-бүлөлүк зомбулук</strong> катталган, бул өткөн жылга салыштырмалуу 37%га көп.</p>
+                    <p><strong>Статистика:</strong></p>
+                    <ul>
+                        <li>Зомбулук жасаган адамдарга карата 12 000ге жакын убактылуу коргоо ордери берилген</li>
+                        <li>Бузуучулардын көпчүлүгү — эркектер (92%)</li>
+                        <li>Жүздөгөн балдар мындай учурларга тартылган (күбө же жабырлануучу катары)</li>
+                        <li>111 ишеним телефонуна кайрылуулар 45%га өскөн</li>
+                    </ul>
+                </div>
+            <div class="modal-footer">
+    <button type="tton" class="btn btn-secondary" data-bs-dismiss="modal">Жабуу</button>
+    <a href="https://mvd.gov.kg/media/new_module/pdfs/2025/12/11/%D2%AE%D0%B9-%D0%B1%D2%AF%D0%BB%D3%A9%D0%BB%D2%AF%D0%BA_%D0%B7%D0%BE%D0%BC%D0%B1%D1%83%D0%BB%D1%83%D0%BA_2025_%D0%B6%D1%8B%D0%BB%D0%B4%D1%8B%D0%BD_10_%D0%BE%D0%BD_%D0%B0%D0%B9%D1%8B%D0%BD%D0%B4%D0%B0.pdf" target="_blank" class="btn btn-primary">Толук маалымат</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newsModal3Ky" tabindex="-1" aria-labelledby="newsModal3KyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal3KyLabel">Талас облусундагы кайгылуу окуя</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Жабуу"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="рh3.jpg" class="img-fluid mb-3 rounded" alt="Жаңылык">
+                    <p class="text-muted"><i class="far fa-calendar-alt me-2"></i> 10-февраль 2026</p>
+                    <p>2026-жылдын февралында Талас облусунда кайгылуу окуя болду: аялды күйөөсү бензинге күйгүзүп, оор күйүк алган. Жабырлануучу оор абалда күйүк борборуна жеткирилген.</p>
+                    <p>Бул окуя коомчулукта кеңири резонанс жаратып, бийликтен үй-бүлөлүк зомбулукка каршы чараларды күчөтүүнү талап кылган акцияларга себеп болгон. Активдер өкмөт жана ИИМ имараттарында пикеттерди өткөрүштү.</p>
+                    <p class="fw-bold text-danger">Эгер сиз коркунучта болсоңуз — дароо 112ге чалыңыз!</p>
+                </div>
+         <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Жабуу</button>
+    <a href="https://kaktus.media/doc/540139_jenshina_soobshila_v_milicii_chto_myj_pytalsia_ee_sjech_video.html" target="_blank" class="btn btn-primary">Толук маалымат</a>
+    <a href="#help-ky" class="btn btn-outline-primary">Жардам контакттары</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопки и скрипты -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    
+        <!-- Скрипт переключения языка (обновлённый) -->
+    <script>
+                function setLanguage(lang) {
+            // Обновляем активный класс у переключателей в обоих меню
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll(`.lang-btn[onclick="setLanguage('${lang}')"]`).forEach(btn => btn.classList.add('active'));
+
+            // Переключаем контент
+            if (lang === 'ru') {
+                // Показываем русский контент
+                document.querySelector('.lang-ru').style.display = 'block';
+                document.querySelector('.lang-ky').style.display = 'none';
+                
+                // Показываем русскую навигацию, скрываем кыргызскую
+                document.querySelector('.lang-ru-nav').style.display = 'flex';
+                document.querySelector('.lang-ky-nav').style.display = 'none';
+                
+                // Показываем русские кнопки, скрываем кыргызские
+                document.querySelectorAll('.scroll-top-btn.ru, .telegram-btn.ru').forEach(btn => btn.style.display = 'block');
+                document.querySelectorAll('.scroll-top-btn.ky, .telegram-btn.ky').forEach(btn => btn.style.display = 'none');
+            } else {
+                // Показываем кыргызский контент
+                document.querySelector('.lang-ru').style.display = 'none';
+                document.querySelector('.lang-ky').style.display = 'block';
+                
+                // Показываем кыргызскую навигацию, скрываем русскую
+                document.querySelector('.lang-ru-nav').style.display = 'none';
+                document.querySelector('.lang-ky-nav').style.display = 'flex';
+                
+                // Показываем кыргызские кнопки, скрываем русские
+                document.querySelectorAll('.scroll-top-btn.ru, .telegram-btn.ru').forEach(btn => btn.style.display = 'none');
+                document.querySelectorAll('.scroll-top-btn.ky, .telegram-btn.ky').forEach(btn => btn.style.display = 'block');
+            }
+        }
+        // По умолчанию русский
+        setLanguage('ru');
+    </script>
+      
+                   <!-- Скрипт для отправки форм (с отладкой) -->
+    <script>
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Определяем язык формы по её ID
+            const isRussian = form.id === 'contactFormRu';
+            
+            console.log('Отправка формы:', form.id);
+            console.log('Данные:', data);
+            console.log('URL:', form.action);
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                console.log('Статус ответа:', response.status);
+                
+                if (response.ok) {
+                    // Показываем сообщение на нужном языке
+                    if (isRussian) {
+                        alert('✅ Спасибо! Сообщение отправлено.');
+                    } else {
+                        alert('✅ Рахмат! Билдирүү жөнөтүлдү.');
+                    }
+                    form.reset(); // очищаем поля
+                } else {
+                    const errorData = await response.json();
+                    console.error('Ошибка ответа:', errorData);
+                    
+                    if (isRussian) {
+                        alert('❌ Ошибка: ' + (errorData.error || 'Что-то пошло не так'));
+                    } else {
+                        alert('❌ Ката: ' + (errorData.error || 'Билдирүү жөнөтүлгөн жок'));
+                    }
+                }
+            } catch (error) {
+                console.error('Ошибка отправки:', error);
+                if (isRussian) {
+                    alert('❌ Ошибка сети. Проверьте подключение к интернету.');
+                } else {
+                    alert('❌ Интернет байланышы жок. Текшерип көрүңүз.');
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const formRu = document.getElementById('contactFormRu');
+            const formKy = document.getElementById('contactFormKy');
+            
+            if (formRu) formRu.addEventListener('submit', handleFormSubmit);
+            if (formKy) formKy.addEventListener('submit', handleFormSubmit);
+        });
+    </script>
+
+        <!-- Скрипт для кнопки наверх (обновлённый) -->
+    <script>
+        window.onscroll = function() {
+            // Показываем/скрываем кнопку в зависимости от текущего языка
+            if (document.querySelector('.lang-ru').style.display !== 'none') {
+                // Русская версия
+                const ruBtn = document.querySelector('.scroll-top-btn.ru');
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    ruBtn.style.display = 'block';
+                } else {
+                    ruBtn.style.display = 'none';
+                }
+            } else {
+                // Кыргызская версия
+                const kyBtn = document.querySelector('.scroll-top-btn.ky');
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    kyBtn.style.display = 'block';
+                } else {
+                    kyBtn.style.display = 'none';
+                }
+            }
+        };
+    </script>
+
+    <!-- Скрипт для счётчика посещений -->
+    <script>
+        if (localStorage.getItem('visitCount')) {
+            let count = parseInt(localStorage.getItem('visitCount')) + 1;
+            localStorage.setItem('visitCount', count);
+            document.getElementById('visitCount').textContent = count;
+        } else {
+            localStorage.setItem('visitCount', 1);
+            document.getElementById('visitCount').textContent = 1;
+        }
+    </script>
+    
+<!-- Скрипт для поиска по странице -->
+<script>
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const searchText = document.getElementById('searchInput').value.toLowerCase().trim();
+    
+    if (searchText === '') {
+        alert('Введите слово для поиска');
+        return;
+    }
+    
+    // Получаем текущий язык
+    const isRussian = document.querySelector('.lang-ru').style.display !== 'none';
+    const container = isRussian ? document.querySelector('.lang-ru') : document.querySelector('.lang-ky');
+    
+    // Ищем все текстовые элементы в контейнере текущего языка
+    const textElements = container.querySelectorAll('p, h1, h2, h3, h4, h5, li, td, .accordion-body, .card-text, .section-title');
+    
+    let found = false;
+    let firstFound = null;
+    
+    // Проходим по всем элементам
+    textElements.forEach(el => {
+        const text = el.textContent.toLowerCase();
+        if (text.includes(searchText)) {
+            // Подсвечиваем найденный элемент
+            el.style.backgroundColor = '#fff3cd';
+            el.style.transition = 'background-color 0.5s';
+            
+            // Запоминаем первый найденный элемент
+            if (!firstFound) {
+                firstFound = el;
+            }
+            
+            found = true;
+        } else {
+            // Убираем подсветку
+            el.style.backgroundColor = '';
+        }
+    });
+    
+    if (found) {
+        // Прокручиваем к первому найденному элементу
+        if (firstFound) {
+            firstFound.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        // Показываем сообщение с количеством
+        const count = document.querySelectorAll('[style*="background-color: rgb(255, 243, 205)"]').length;
+        alert(`🔍 Найдено совпадений: ${count}`);
+    } else {
+        alert('❌ Ничего не найдено. Попробуйте другое слово.');
+        
+        // Убираем всю подсветку
+        textElements.forEach(el => {
+            el.style.backgroundColor = '';
+        });
+    }
+});
+
+// Очищаем подсветку при клике на другое поле
+document.getElementById('searchInput').addEventListener('focus', function() {
+    document.querySelectorAll('[style*="background-color: rgb(255, 243, 205)"]').forEach(el => {
+        el.style.backgroundColor = '';
+    });
+});
+</script>
+    <!-- Скрипт для поиска по странице (обновлённый для двух навигаций) -->
+    <script>
+    // Функция поиска для русской версии
+    document.getElementById('searchFormRu')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        performSearch(document.getElementById('searchInputRu').value, 'ru');
+    });
+
+    // Функция поиска для кыргызской версии
+    document.getElementById('searchFormKy')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        performSearch(document.getElementById('searchInputKy').value, 'ky');
+    });
+
+    function performSearch(searchText, lang) {
+        searchText = searchText.toLowerCase().trim();
+        
+        if (searchText === '') {
+            alert(lang === 'ru' ? 'Введите слово для поиска' : 'Издөө үчүн сөз жазыңыз');
+            return;
+        }
+        
+        // Выбираем контейнер в зависимости от языка
+        const container = lang === 'ru' ? document.querySelector('.lang-ru') : document.querySelector('.lang-ky');
+        
+        // Ищем все текстовые элементы
+        const textElements = container.querySelectorAll('p, h1, h2, h3, h4, h5, li, td, .accordion-body, .card-text, .section-title, .faq-category-title, .alert');
+        
+        let found = false;
+        let firstFound = null;
+        
+        // Очищаем предыдущую подсветку
+        document.querySelectorAll('.search-highlight').forEach(el => {
+            el.classList.remove('search-highlight');
+            el.style.backgroundColor = '';
+        });
+        
+        // Проходим по всем элементам
+        textElements.forEach(el => {
+            const text = el.textContent.toLowerCase();
+            if (text.includes(searchText)) {
+                // Подсвечиваем найденный элемент
+                el.classList.add('search-highlight');
+                el.style.backgroundColor = '#fff3cd';
+                el.style.transition = 'background-color 0.5s';
+                
+                // Запоминаем первый найденный элемент
+                if (!firstFound) {
+                    firstFound = el;
+                }
+                
+                found = true;
+            }
+        });
+        
+        if (found) {
+            // Прокручиваем к первому найденному элементу
+            if (firstFound) {
+                firstFound.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            
+            // Считаем количество найденных элементов
+            const count = document.querySelectorAll('.search-highlight').length;
+            alert(lang === 'ru' 
+                ? `🔍 Найдено совпадений: ${count}` 
+                : `🔍 Дал келүүлөр: ${count}`);
+        } else {
+            alert(lang === 'ru' 
+                ? '❌ Ничего не найдено. Попробуйте другое слово.' 
+                : '❌ Эч нерсе табылган жок. Башка сөз жазып көрүңүз.');
+        }
+    }
+
+    // Очищаем подсветку при фокусе на поле поиска
+    document.getElementById('searchInputRu')?.addEventListener('focus', function() {
+        document.querySelectorAll('.search-highlight').forEach(el => {
+            el.classList.remove('search-highlight');
+            el.style.backgroundColor = '';
+        });
+    });
+
+    document.getElementById('searchInputKy')?.addEventListener('focus', function() {
+        document.querySelectorAll('.search-highlight').forEach(el => {
+            el.classList.remove('search-highlight');
+            el.style.backgroundColor = '';
+        });
+    });
+    </script>
+</body>
+</html>
+ 
+      
